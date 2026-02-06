@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/data">
+    <file alias="machines.json">C:/Z_Programming_Backup/Programming/projects/gymApp/data/machines.json</file>
+    <file alias="gym_21_1_2026.json">C:/Z_Programming_Backup/Programming/projects/gymApp/data/gym_21_1_2026.json</file>
+  </qresource>
+</RCC>
+

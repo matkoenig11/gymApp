@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\qmake_GymApp.qrc" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\GymApp\qmldir" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\GymApp_raw_qml_0.qrc" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\Main.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\HeaderBar.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\DatabaseCard.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\MachineListCard.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\MachineListItem.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionView.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionListPage.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionEditorPane.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\ExerciseCardEditor.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SetRowEditor.qml" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\data.qrc" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\data\machines.json" />
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\data\gym_21_1_2026.json" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

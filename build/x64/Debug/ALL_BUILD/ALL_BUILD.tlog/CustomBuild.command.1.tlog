@@ -1,0 +1,10 @@
+^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Z_Programming_Backup/Programming/projects/gymApp -BC:/Z_Programming_Backup/Programming/projects/gymApp/build --check-stamp-file C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

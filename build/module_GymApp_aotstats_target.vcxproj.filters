@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\DatabaseCard_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\ExerciseCardEditor_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\HeaderBar_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\MachineListCard_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\MachineListItem_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\Main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\SessionEditorPane_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\SessionListPage_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\SessionView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\f44f0860aad858e4fd733cd5ddb65170\SetRowEditor_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\0cc7af001a2e5bd7ff9e7ed72d49f2e9\module_GymApp.aotstats.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\89a94d84fa3b9acc7cac9dd09dcb3bd7\module_GymApp_aotstats_target.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Z_Programming_Backup\Programming\projects\gymApp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\CMakeFiles\module_GymApp_aotstats_target" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ED480078-F689-3F97-99FD-789CEA0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

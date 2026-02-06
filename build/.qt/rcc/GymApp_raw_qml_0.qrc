@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/GymApp/">
+    <file alias="qml/Main.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Main.qml</file>
+    <file alias="qml/HeaderBar.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml</file>
+    <file alias="qml/DatabaseCard.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/DatabaseCard.qml</file>
+    <file alias="qml/MachineListCard.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListCard.qml</file>
+    <file alias="qml/MachineListItem.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListItem.qml</file>
+    <file alias="qml/SessionView.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionView.qml</file>
+    <file alias="qml/SessionListPage.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionListPage.qml</file>
+    <file alias="qml/SessionEditorPane.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml</file>
+    <file alias="qml/ExerciseCardEditor.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ExerciseCardEditor.qml</file>
+    <file alias="qml/SetRowEditor.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml</file>
+  </qresource>
+</RCC>
+

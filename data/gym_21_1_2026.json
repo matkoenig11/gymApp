@@ -1,0 +1,46 @@
+{
+  "session_date": "2026-01-21T18:51:00",
+  "note": "Imported from manual log.",
+  "exercises": [
+    {
+      "machine": "Leg Press",
+      "muscle_group": "B6",
+      "sets": [
+        {"set": 1, "reps": 10, "weight_lbs": 280},
+        {"set": 2, "reps": 10, "weight_lbs": 280},
+        {"set": 3, "reps": 10, "weight_lbs": 280},
+        {"set": 4, "reps": 15, "weight_lbs": 280}
+      ]
+    },
+    {
+      "machine": "Horizontal Pull",
+      "muscle_group": "B4",
+      "sets": [
+        {"set": 1, "reps": 8, "weight_lbs": 95},
+        {"set": 2, "reps": 8, "weight_lbs": 95},
+        {"set": 3, "reps": 8, "weight_lbs": 95},
+        {"set": 4, "reps": 12, "weight_lbs": 95}
+      ]
+    },
+    {
+      "machine": "Vertical Push (Not Chest Press)",
+      "muscle_group": "B5",
+      "sets": [
+        {"set": 1, "reps": 10, "weight_lbs": 55},
+        {"set": 2, "reps": 10, "weight_lbs": 55},
+        {"set": 3, "reps": 10, "weight_lbs": 55},
+        {"set": 4, "reps": 12, "weight_lbs": 55}
+      ]
+    },
+    {
+      "machine": "Vertical Pull (Side)",
+      "muscle_group": "B4",
+      "sets": [
+        {"set": 1, "reps": 8, "weight_lbs": 45},
+        {"set": 2, "reps": 8, "weight_lbs": 40},
+        {"set": 3, "reps": 8, "weight_lbs": 40},
+        {"set": 4, "reps": 8, "weight_lbs": 40}
+      ]
+    }
+  ]
+}

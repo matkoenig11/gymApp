@@ -1,0 +1,27 @@
+{
+    // Ensure CMake Tools runs the actual executable target.
+    "cmake.launchTarget": "GymApp",
+    "cmake.debugTarget": "GymApp",
+    "cmake.buildConfig": "Debug",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    // Force the exact path used when pressing Run/Without Debugging to avoid missing build-type subfolder.
+    "cmake.launchTargetPath": "${workspaceFolder}/build/Debug/GymApp.exe",
+
+    // Provide a console and logging env so qDebug() shows up when running via CMake Tools.
+    "cmake.debugConfig": {
+        "cwd": "${workspaceFolder}/build/Debug",
+        "environment": [
+            { "name": "QT_FORCE_STDERR_LOGGING", "value": "1" }
+        ],
+        "externalConsole": true
+    },
+
+    // Match run-without-debugging env/console.
+    "cmake.runConfig": {
+        "cwd": "${workspaceFolder}/build/Debug",
+        "environment": [
+            { "name": "QT_FORCE_STDERR_LOGGING", "value": "1" }
+        ],
+        "externalConsole": true
+    }
+}

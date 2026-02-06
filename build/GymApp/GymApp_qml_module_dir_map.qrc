@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/GymApp">C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp</file>
+
+  </qresource>
+</RCC>

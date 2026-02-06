@@ -1,0 +1,28 @@
+^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\BUILD\CMAKEFILES\B7C2F00CD4F9C3FD109FE0E35C7D3271\GYMAPP_QML.TXT.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFILES_INFO_PATH=C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/GymApp_qml.cmake -P C:/Qt/6.8.2/msvc2022_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\BUILD\CMAKEFILES\89A94D84FA3B9ACC7CAC9DD09DCB3BD7\GYMAPP_COPY_QML.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Z_Programming_Backup/Programming/projects/gymApp -BC:/Z_Programming_Backup/Programming/projects/gymApp/build --check-stamp-file C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

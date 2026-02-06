@@ -1,0 +1,9 @@
+module GymApp
+typeinfo GymApp.qmltypes
+prefer :/GymApp/
+Main 1.0 qml/Main.qml
+HeaderBar 1.0 qml/HeaderBar.qml
+DatabaseCard 1.0 qml/DatabaseCard.qml
+MachineListCard 1.0 qml/MachineListCard.qml
+MachineListItem 1.0 qml/MachineListItem.qml
+

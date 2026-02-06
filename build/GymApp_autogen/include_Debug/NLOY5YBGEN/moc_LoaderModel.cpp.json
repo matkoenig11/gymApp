@@ -1,0 +1,42 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "LoaderModel",
+            "lineNumber": 10,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "connectionName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "jsonUrl",
+                            "type": "QUrl"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "loadMachinesFromJson",
+                    "returnType": "QVariantMap"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "gym::LoaderModel",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "LoaderModel.h",
+    "outputRevision": 68
+}

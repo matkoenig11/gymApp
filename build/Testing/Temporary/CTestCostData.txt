@@ -1,0 +1,4 @@
+SessionDetailModelTest 15 0.00159544
+RepositoryCrudTest 11 0.0115177
+SessionEditorModelInvokeTest 8 0.00322998
+---

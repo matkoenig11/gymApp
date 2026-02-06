@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Leg Press",
+    "muscle_group": "B6",
+    "weight_min": 0,
+    "weight_max": 500,
+    "note": "Plate-loaded leg press"
+  },
+  {
+    "name": "Horizontal Pull",
+    "muscle_group": "B4",
+    "weight_min": 0,
+    "weight_max": 500,
+    "note": "Cable or machine row"
+  },
+  {
+    "name": "Vertical Push (Not Chest Press)",
+    "muscle_group": "B5",
+    "weight_min": 0,
+    "weight_max": 500,
+    "note": "Overhead-style push machine"
+  },
+  {
+    "name": "Vertical Pull (Side)",
+    "muscle_group": "B4",
+    "weight_min": 0,
+    "weight_max": 500,
+    "note": "Lat pull-down variation"
+  }
+]

@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run GymApp (Debug)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Debug/GymApp.exe",
+            "cwd": "${workspaceFolder}/build/Debug",
+            "environment": [
+                { "name": "QT_FORCE_STDERR_LOGGING", "value": "1" }
+            ],
+            "externalConsole": true
+        },
+        {
+            "name": "Run GymApp (Release)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Release/GymApp.exe",
+            "cwd": "${workspaceFolder}/build/Release",
+            "environment": [
+                { "name": "QT_FORCE_STDERR_LOGGING", "value": "1" }
+            ],
+            "externalConsole": true
+        }
+    ]
+}
