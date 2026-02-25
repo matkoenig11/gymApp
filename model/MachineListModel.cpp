@@ -54,6 +54,40 @@ void MachineListModel::setRepository(const MachineRepository &repository) {
     refresh();
 }
 
+int MachineListModel::addMachine(const QString &name,
+                                 const QString &muscleGroup,
+                                 int weightMin,
+                                 int weightMax,
+                                 const QString &note) {
+    const int id = repository_.addMachine(name, muscleGroup, weightMin, weightMax, note);
+    if (id > 0) {
+        refresh();
+    }
+    return id;
+}
+
+bool MachineListModel::updateMachine(int id,
+                                     const QString &name,
+                                     const QString &muscleGroup,
+                                     int weightMin,
+                                     int weightMax,
+                                     const QString &note,
+                                     bool isActive) {
+    const bool ok = repository_.updateMachine(id, name, muscleGroup, weightMin, weightMax, note, isActive);
+    if (ok) {
+        refresh();
+    }
+    return ok;
+}
+
+bool MachineListModel::deleteMachine(int id) {
+    const bool ok = repository_.softDeleteMachine(id);
+    if (ok) {
+        refresh();
+    }
+    return ok;
+}
+
 void MachineListModel::refresh() {
     if (!repository_.isReady()) {
         qWarning() << "MachineListModel: repository not ready";

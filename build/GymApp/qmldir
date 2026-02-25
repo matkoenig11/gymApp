@@ -1,5 +1,5 @@
 module GymApp
-typeinfo GymApp.qmltypes
+typeinfo GymModel.qmltypes
 prefer :/GymApp/
 Main 1.0 qml/Main.qml
 HeaderBar 1.0 qml/HeaderBar.qml

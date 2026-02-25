@@ -5,6 +5,9 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QVariant>
+#include <QStringList>
+
+#include "../core/Clogger.h"
 
 namespace gym {
 
@@ -40,6 +43,8 @@ QVariant SessionEditorModel::data(const QModelIndex &index, int role) const {
         return item.exercise.muscleGroup;
     case CommentRole:
         return item.exercise.comment;
+    case EffortRirRole:
+        return item.exercise.effortRir.has_value() ? QVariant(item.exercise.effortRir.value()) : QVariant();
     case OrderRole:
         return item.exercise.orderIndex;
     case SetCountRole:
@@ -57,6 +62,7 @@ QHash<int, QByteArray> SessionEditorModel::roleNames() const {
         {MachineNameRole, "machineName"},
         {MuscleGroupRole, "muscleGroup"},
         {CommentRole, "comment"},
+        {EffortRirRole, "effortRir"},
         {OrderRole, "orderIndex"},
         {SetCountRole, "setCount"},
         {SetsRole, "sets"},
@@ -78,6 +84,7 @@ bool SessionEditorModel::ensureSession() {
     }
     sessionId_ = newId;
     sessionStarted_ = QDateTime::currentDateTime().toString(Qt::ISODate);
+    Clogger::debug(QStringLiteral("Created new session %1").arg(sessionId_), ELogColor::Green, __FILE__, __LINE__, __func__);
     emit sessionChanged();
     return true;
 }
@@ -88,6 +95,9 @@ bool SessionEditorModel::loadSession(int sessionId) {
         return false;
     }
 
+    Clogger::debug(QStringLiteral("loadSession called with id=%1").arg(sessionId),
+                   ELogColor::Cyan, __FILE__, __LINE__, __func__);
+
     if (sessionId < 0) {
         sessionId_ = -1;
         sessionNote_.clear();
@@ -97,7 +107,11 @@ bool SessionEditorModel::loadSession(int sessionId) {
         endResetModel();
         emit countChanged();
         emit sessionChanged();
-        return ensureSession() && reloadExercises();
+        const bool ok = ensureSession() && reloadExercises();
+        Clogger::debug(QStringLiteral("Initialized new session editor; sessionId=%1, exercises=%2")
+                           .arg(sessionId_).arg(items_.size()),
+                       ELogColor::Yellow, __FILE__, __LINE__, __func__);
+        return ok;
     }
 
     Session s = sessionRepo_.fetchOne(sessionId);
@@ -110,6 +124,9 @@ bool SessionEditorModel::loadSession(int sessionId) {
     sessionStarted_ = s.startedAt;
     const bool ok = reloadExercises();
     emit sessionChanged();
+    Clogger::debug(QStringLiteral("Loaded session %1 started=%2 noteLen=%3 exercises=%4")
+                       .arg(sessionId_).arg(sessionStarted_).arg(sessionNote_.length()).arg(items_.size()),
+                   ELogColor::Green, __FILE__, __LINE__, __func__);
     return ok;
 }
 
@@ -133,6 +150,21 @@ bool SessionEditorModel::reloadExercises() {
     endResetModel();
     emit countChanged();
     emit exercisesChanged();
+
+    QStringList summaries;
+    for (const auto &it : items_) {
+        summaries.append(QStringLiteral("#%1 %2 sets=%3")
+                             .arg(it.exercise.id)
+                             .arg(it.exercise.machineNameResolved.isEmpty()
+                                      ? it.exercise.machineNameSnapshot
+                                      : it.exercise.machineNameResolved)
+                             .arg(it.sets.size()));
+    }
+    Clogger::debug(QStringLiteral("reloadExercises sessionId=%1 count=%2 [%3]")
+                       .arg(sessionId_)
+                       .arg(items_.size())
+                       .arg(summaries.join(QStringLiteral("; "))),
+                   ELogColor::Magenta, __FILE__, __LINE__, __func__);
     return true;
 }
 
@@ -172,13 +204,34 @@ bool SessionEditorModel::updateSessionNote(const QString &note) {
     const bool ok = sessionRepo_.updateSessionMeta(sessionId_, sessionStarted_, sessionNote_);
     if (ok) {
         emit sessionChanged();
+        Clogger::debug(QStringLiteral("updateSessionNote sessionId=%1 len=%2")
+                           .arg(sessionId_).arg(sessionNote_.length()),
+                       ELogColor::Blue, __FILE__, __LINE__, __func__);
     }
     return ok;
 }
 
+bool SessionEditorModel::updateSessionStarted(const QString &startedAt) {
+    if (sessionId_ <= 0 && !ensureSession()) {
+        return false;
+    }
+    const QString newStarted = startedAt.isEmpty()
+                                   ? QDateTime::currentDateTime().toString(Qt::ISODate)
+                                   : startedAt;
+    const bool ok = sessionRepo_.updateSessionMeta(sessionId_, newStarted, sessionNote_);
+    if (ok) {
+        sessionStarted_ = newStarted;
+        emit sessionChanged();
+        Clogger::debug(QStringLiteral("updateSessionStarted sessionId=%1 started=%2")
+                           .arg(sessionId_).arg(sessionStarted_),
+                       ELogColor::Blue, __FILE__, __LINE__, __func__);
+    }
+    return ok;
+}
 int SessionEditorModel::addExercise(const QVariant &machineIdVar,
                                     const QVariant &customNameVar,
-                                    const QVariant &commentVar) {
+                                    const QVariant &commentVar,
+                                    const QVariant &effortRirVar) {
     if (!ensureSession()) {
         return 0;
     }
@@ -186,10 +239,11 @@ int SessionEditorModel::addExercise(const QVariant &machineIdVar,
     const int machineId = machineIdVar.toInt();
     const QString nameSnapshot = customNameVar.isNull() ? QString() : customNameVar.toString();
     const QString comment = commentVar.isNull() ? QString() : commentVar.toString();
+    const std::optional<int> effortRir = effortRirVar.isNull() ? std::nullopt : std::optional<int>(effortRirVar.toInt());
 
     std::optional<int> machineOpt = machineId > 0 ? std::optional<int>(machineId) : std::nullopt;
 
-    const int id = exerciseRepo_.addExercise(sessionId_, machineOpt, nameSnapshot, comment, -1);
+    const int id = exerciseRepo_.addExercise(sessionId_, machineOpt, nameSnapshot, comment, effortRir, -1);
     if (id > 0) {
         reloadExercises();
     }
@@ -199,24 +253,28 @@ int SessionEditorModel::addExercise(const QVariant &machineIdVar,
 bool SessionEditorModel::updateExercise(int exerciseId,
                                         const QString &comment,
                                         int machineId,
-                                        const QString &customName) {
+                                        const QString &customName,
+                                        const QVariant &effortRirVar) {
     // If no machine changes are provided, keep existing linkage/snapshot.
     std::optional<int> machineOpt;
     QString nameSnapshot = customName;
     if (machineId > 0) {
         machineOpt = machineId;
     }
-    if (machineOpt == std::nullopt && nameSnapshot.isEmpty()) {
+    std::optional<int> effortRir = effortRirVar.isNull() ? std::nullopt : std::optional<int>(effortRirVar.toInt());
+
+    if (machineOpt == std::nullopt && nameSnapshot.isEmpty() && !effortRir.has_value()) {
         for (const ExerciseItem &item : items_) {
             if (item.exercise.id == exerciseId) {
                 machineOpt = item.exercise.machineId;
                 nameSnapshot = item.exercise.machineNameSnapshot;
+                effortRir = item.exercise.effortRir;
                 break;
             }
         }
     }
 
-    const bool ok = exerciseRepo_.updateExercise(exerciseId, machineOpt, nameSnapshot, comment);
+    const bool ok = exerciseRepo_.updateExercise(exerciseId, machineOpt, nameSnapshot, comment, effortRir);
     if (ok) {
         reloadExercises();
     }
@@ -265,16 +323,16 @@ bool SessionEditorModel::removeExercise(int exerciseId) {
     return true;
 }
 
-int SessionEditorModel::addSet(int exerciseId, int reps, double weight, double rpe, bool warmup) {
+int SessionEditorModel::addSet(int exerciseId, int reps, double weight) {
     const int setNumber = setRepo_.nextSetNumber(exerciseId);
-    const int id = setRepo_.addSet(exerciseId, setNumber, reps, weight, rpe, warmup);
+    const int id = setRepo_.addSet(exerciseId, setNumber, reps, weight);
     if (id > 0) {
         reloadExercises();
     }
     return id;
 }
 
-bool SessionEditorModel::updateSet(int setId, int reps, double weight, double rpe, bool warmup) {
+bool SessionEditorModel::updateSet(int setId, int reps, double weight) {
     // Keep set number as-is: fetch current number
     int setNumber = 1;
     for (const ExerciseItem &item : items_) {
@@ -285,7 +343,7 @@ bool SessionEditorModel::updateSet(int setId, int reps, double weight, double rp
             }
         }
     }
-    const bool ok = setRepo_.updateSet(setId, setNumber, reps, weight, rpe, warmup);
+    const bool ok = setRepo_.updateSet(setId, setNumber, reps, weight);
     if (ok) {
         reloadExercises();
     }
@@ -321,8 +379,6 @@ QVariantList SessionEditorModel::setsToVariantList(const QVector<SetRow> &sets) 
         map.insert(QStringLiteral("setNumber"), s.setNumber);
         map.insert(QStringLiteral("reps"), s.reps);
         map.insert(QStringLiteral("weight"), s.weightLbs);
-        map.insert(QStringLiteral("rpe"), s.rpe);
-        map.insert(QStringLiteral("warmup"), s.isWarmup);
         list.append(map);
     }
     return list;
@@ -348,6 +404,7 @@ QVariantList SessionEditorModel::debugExercises() const {
         m.insert(QStringLiteral("machineNameResolved"), item.exercise.machineNameResolved);
         m.insert(QStringLiteral("orderIndex"), item.exercise.orderIndex);
         m.insert(QStringLiteral("comment"), item.exercise.comment);
+        m.insert(QStringLiteral("effortRir"), item.exercise.effortRir.has_value() ? item.exercise.effortRir.value() : QVariant());
         m.insert(QStringLiteral("setCount"), item.sets.size());
         list.append(m);
     }

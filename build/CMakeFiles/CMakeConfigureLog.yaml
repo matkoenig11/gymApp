@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.13.15+18b3035f6 for .NET Framework
-      Build started 1/25/2026 1:07:14 PM.
+      Build started 2/12/2026 8:44:55 PM.
       
       Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\4.0.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.36
+      Time Elapsed 00:00:00.39
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -72,8 +72,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-o55e6n"
-      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-o55e6n"
+      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-ry5k3l"
+      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-ry5k3l"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -83,40 +83,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-o55e6n'
+        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-ry5k3l'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1d1b2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f882a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.15+18b3035f6 for .NET Framework
-        Build started 1/25/2026 1:07:15 PM.
+        Build started 2/12/2026 8:44:56 PM.
         
-        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o55e6n\\cmTC_1d1b2.vcxproj" on node 1 (default targets).
+        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ry5k3l\\cmTC_f882a.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_1d1b2.dir\\Debug\\".
+          Creating directory "cmTC_f882a.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o55e6n\\Debug\\".
-          Creating directory "cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.tlog\\".
+          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ry5k3l\\Debug\\".
+          Creating directory "cmTC_f882a.dir\\Debug\\cmTC_f882a.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_f882a.dir\\Debug\\cmTC_f882a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f882a.dir\\Debug\\cmTC_f882a.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1d1b2.dir\\Debug\\\\" /Fd"cmTC_1d1b2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f882a.dir\\Debug\\\\" /Fd"cmTC_f882a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1d1b2.dir\\Debug\\\\" /Fd"cmTC_1d1b2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f882a.dir\\Debug\\\\" /Fd"cmTC_f882a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o55e6n\\Debug\\cmTC_1d1b2.exe" /INCREMENTAL /ILK:"cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-o55e6n/Debug/cmTC_1d1b2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-o55e6n/Debug/cmTC_1d1b2.lib" /MACHINE:X64  /machine:x64 cmTC_1d1b2.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_1d1b2.vcxproj -> C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o55e6n\\Debug\\cmTC_1d1b2.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ry5k3l\\Debug\\cmTC_f882a.exe" /INCREMENTAL /ILK:"cmTC_f882a.dir\\Debug\\cmTC_f882a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-ry5k3l/Debug/cmTC_f882a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-ry5k3l/Debug/cmTC_f882a.lib" /MACHINE:X64  /machine:x64 cmTC_f882a.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_f882a.vcxproj -> C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ry5k3l\\Debug\\cmTC_f882a.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_1d1b2.dir\\Debug\\cmTC_1d1b2.tlog\\cmTC_1d1b2.lastbuildstate".
-        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-o55e6n\\cmTC_1d1b2.vcxproj" (default targets).
+          Deleting file "cmTC_f882a.dir\\Debug\\cmTC_f882a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f882a.dir\\Debug\\cmTC_f882a.tlog\\cmTC_f882a.lastbuildstate".
+        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ry5k3l\\cmTC_f882a.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.34
+        Time Elapsed 00:00:00.39
         
       exitCode: 0
   -
@@ -162,8 +162,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-wu6ric"
-      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-wu6ric"
+      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-4njgn4"
+      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-4njgn4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -173,40 +173,40 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-wu6ric'
+        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-4njgn4'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ab601.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3109.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.15+18b3035f6 for .NET Framework
-        Build started 1/25/2026 1:07:15 PM.
+        Build started 2/12/2026 8:44:57 PM.
         
-        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\cmTC_ab601.vcxproj" on node 1 (default targets).
+        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\cmTC_a3109.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ab601.dir\\Debug\\".
+          Creating directory "cmTC_a3109.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\Debug\\".
-          Creating directory "cmTC_ab601.dir\\Debug\\cmTC_ab601.tlog\\".
+          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\Debug\\".
+          Creating directory "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ab601.dir\\Debug\\cmTC_ab601.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ab601.dir\\Debug\\cmTC_ab601.tlog\\unsuccessfulbuild".
+          Creating "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_ab601.dir\\Debug\\\\" /Fd"cmTC_ab601.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\src.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_a3109.dir\\Debug\\\\" /Fd"cmTC_a3109.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_ab601.dir\\Debug\\\\" /Fd"cmTC_ab601.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_a3109.dir\\Debug\\\\" /Fd"cmTC_a3109.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\src.cxx"
           src.cxx
-        C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\cmTC_ab601.vcxproj]
-        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\cmTC_ab601.vcxproj" (default targets) -- FAILED.
+        C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\cmTC_a3109.vcxproj]
+        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\cmTC_a3109.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\cmTC_ab601.vcxproj" (default target) (1) ->
+        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\cmTC_a3109.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wu6ric\\cmTC_ab601.vcxproj]
+          C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4njgn4\\cmTC_a3109.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.21
+        Time Elapsed 00:00:00.25
         
       exitCode: 1
   -
@@ -223,8 +223,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-v5am19"
-      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-v5am19"
+      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-dve6wo"
+      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-dve6wo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -234,42 +234,42 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-v5am19'
+        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-dve6wo'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_03946.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e5212.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.15+18b3035f6 for .NET Framework
-        Build started 1/25/2026 1:07:16 PM.
+        Build started 2/12/2026 8:44:57 PM.
         
-        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\cmTC_03946.vcxproj" on node 1 (default targets).
+        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\cmTC_e5212.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_03946.dir\\Debug\\".
+          Creating directory "cmTC_e5212.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\Debug\\".
-          Creating directory "cmTC_03946.dir\\Debug\\cmTC_03946.tlog\\".
+          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\Debug\\".
+          Creating directory "cmTC_e5212.dir\\Debug\\cmTC_e5212.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_03946.dir\\Debug\\cmTC_03946.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_03946.dir\\Debug\\cmTC_03946.tlog\\unsuccessfulbuild".
+          Creating "cmTC_e5212.dir\\Debug\\cmTC_e5212.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e5212.dir\\Debug\\cmTC_e5212.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_03946.dir\\Debug\\\\" /Fd"cmTC_03946.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\CheckFunctionExists.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5212.dir\\Debug\\\\" /Fd"cmTC_e5212.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_03946.dir\\Debug\\\\" /Fd"cmTC_03946.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5212.dir\\Debug\\\\" /Fd"cmTC_e5212.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\Debug\\cmTC_03946.exe" /INCREMENTAL /ILK:"cmTC_03946.dir\\Debug\\cmTC_03946.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-v5am19/Debug/cmTC_03946.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-v5am19/Debug/cmTC_03946.lib" /MACHINE:X64  /machine:x64 cmTC_03946.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\cmTC_03946.vcxproj]
-        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\cmTC_03946.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\Debug\\cmTC_e5212.exe" /INCREMENTAL /ILK:"cmTC_e5212.dir\\Debug\\cmTC_e5212.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-dve6wo/Debug/cmTC_e5212.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-dve6wo/Debug/cmTC_e5212.lib" /MACHINE:X64  /machine:x64 cmTC_e5212.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\cmTC_e5212.vcxproj]
+        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\cmTC_e5212.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\cmTC_03946.vcxproj" (default target) (1) ->
+        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\cmTC_e5212.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v5am19\\cmTC_03946.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dve6wo\\cmTC_e5212.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.27
+        Time Elapsed 00:00:00.29
         
       exitCode: 1
   -
@@ -286,8 +286,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-uwed3m"
-      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-uwed3m"
+      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-pzucsd"
+      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-pzucsd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -297,42 +297,42 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-uwed3m'
+        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-pzucsd'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e5dfc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2fcfe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.15+18b3035f6 for .NET Framework
-        Build started 1/25/2026 1:07:16 PM.
+        Build started 2/12/2026 8:44:58 PM.
         
-        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\cmTC_e5dfc.vcxproj" on node 1 (default targets).
+        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\cmTC_2fcfe.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_e5dfc.dir\\Debug\\".
+          Creating directory "cmTC_2fcfe.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\Debug\\".
-          Creating directory "cmTC_e5dfc.dir\\Debug\\cmTC_e5dfc.tlog\\".
+          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\Debug\\".
+          Creating directory "cmTC_2fcfe.dir\\Debug\\cmTC_2fcfe.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_e5dfc.dir\\Debug\\cmTC_e5dfc.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_e5dfc.dir\\Debug\\cmTC_e5dfc.tlog\\unsuccessfulbuild".
+          Creating "cmTC_2fcfe.dir\\Debug\\cmTC_2fcfe.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2fcfe.dir\\Debug\\cmTC_2fcfe.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5dfc.dir\\Debug\\\\" /Fd"cmTC_e5dfc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\CheckFunctionExists.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_2fcfe.dir\\Debug\\\\" /Fd"cmTC_2fcfe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\CheckFunctionExists.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_e5dfc.dir\\Debug\\\\" /Fd"cmTC_e5dfc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\CheckFunctionExists.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_2fcfe.dir\\Debug\\\\" /Fd"cmTC_2fcfe.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\CheckFunctionExists.cxx"
           CheckFunctionExists.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\Debug\\cmTC_e5dfc.exe" /INCREMENTAL /ILK:"cmTC_e5dfc.dir\\Debug\\cmTC_e5dfc.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-uwed3m/Debug/cmTC_e5dfc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-uwed3m/Debug/cmTC_e5dfc.lib" /MACHINE:X64  /machine:x64 cmTC_e5dfc.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\cmTC_e5dfc.vcxproj]
-        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\cmTC_e5dfc.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\Debug\\cmTC_2fcfe.exe" /INCREMENTAL /ILK:"cmTC_2fcfe.dir\\Debug\\cmTC_2fcfe.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-pzucsd/Debug/cmTC_2fcfe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-pzucsd/Debug/cmTC_2fcfe.lib" /MACHINE:X64  /machine:x64 cmTC_2fcfe.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\cmTC_2fcfe.vcxproj]
+        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\cmTC_2fcfe.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\cmTC_e5dfc.vcxproj" (default target) (1) ->
+        "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\cmTC_2fcfe.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-uwed3m\\cmTC_e5dfc.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pzucsd\\cmTC_2fcfe.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.27
+        Time Elapsed 00:00:00.30
         
       exitCode: 1
   -
@@ -350,8 +350,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-97dqwq"
-      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-97dqwq"
+      source: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-09kuwa"
+      binary: "C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-09kuwa"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -361,40 +361,40 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-97dqwq'
+        Change Dir: 'C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-09kuwa'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_aa54d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d457c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.13.15+18b3035f6 for .NET Framework
-        Build started 1/25/2026 1:07:17 PM.
+        Build started 2/12/2026 8:44:58 PM.
         
-        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\cmTC_aa54d.vcxproj" on node 1 (default targets).
+        Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\cmTC_d457c.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_aa54d.dir\\Debug\\".
+          Creating directory "cmTC_d457c.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\Debug\\".
-          Creating directory "cmTC_aa54d.dir\\Debug\\cmTC_aa54d.tlog\\".
+          Creating directory "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\Debug\\".
+          Creating directory "cmTC_d457c.dir\\Debug\\cmTC_d457c.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_aa54d.dir\\Debug\\cmTC_aa54d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_aa54d.dir\\Debug\\cmTC_aa54d.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d457c.dir\\Debug\\cmTC_d457c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d457c.dir\\Debug\\cmTC_d457c.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_aa54d.dir\\Debug\\\\" /Fd"cmTC_aa54d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\src.cxx"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d457c.dir\\Debug\\\\" /Fd"cmTC_d457c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\src.cxx"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_aa54d.dir\\Debug\\\\" /Fd"cmTC_aa54d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\src.cxx"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_d457c.dir\\Debug\\\\" /Fd"cmTC_d457c.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\Debug\\cmTC_aa54d.exe" /INCREMENTAL /ILK:"cmTC_aa54d.dir\\Debug\\cmTC_aa54d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-97dqwq/Debug/cmTC_aa54d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-97dqwq/Debug/cmTC_aa54d.lib" /MACHINE:X64  /machine:x64 cmTC_aa54d.dir\\Debug\\src.obj
-          cmTC_aa54d.vcxproj -> C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\Debug\\cmTC_aa54d.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\Debug\\cmTC_d457c.exe" /INCREMENTAL /ILK:"cmTC_d457c.dir\\Debug\\cmTC_d457c.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-09kuwa/Debug/cmTC_d457c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/CMakeScratch/TryCompile-09kuwa/Debug/cmTC_d457c.lib" /MACHINE:X64  /machine:x64 cmTC_d457c.dir\\Debug\\src.obj
+          cmTC_d457c.vcxproj -> C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\Debug\\cmTC_d457c.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_aa54d.dir\\Debug\\cmTC_aa54d.tlog\\unsuccessfulbuild".
-          Touching "cmTC_aa54d.dir\\Debug\\cmTC_aa54d.tlog\\cmTC_aa54d.lastbuildstate".
-        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-97dqwq\\cmTC_aa54d.vcxproj" (default targets).
+          Deleting file "cmTC_d457c.dir\\Debug\\cmTC_d457c.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d457c.dir\\Debug\\cmTC_d457c.tlog\\cmTC_d457c.lastbuildstate".
+        Done Building Project "C:\\Z_Programming_Backup\\Programming\\projects\\gymApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-09kuwa\\cmTC_d457c.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.40
+        Time Elapsed 00:00:00.42
         
       exitCode: 0
 ...

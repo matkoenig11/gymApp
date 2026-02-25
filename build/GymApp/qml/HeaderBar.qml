@@ -6,6 +6,8 @@ import QtQuick.Layouts
 ToolBar {
     id: root
     property alias titleText: titleLabel.text
+    property bool showBack: false
+    signal back()
 
     signal importSqlite()
     signal importJson()
@@ -19,6 +21,11 @@ ToolBar {
     RowLayout {
         anchors.fill: parent
         spacing: 8
+        ToolButton {
+            visible: root.showBack
+            text: "\u25c0"
+            onClicked: root.back()
+        }
         ToolButton {
             text: "\u2630"
             onClicked: mainMenu.open()

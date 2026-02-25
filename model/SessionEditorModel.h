@@ -27,6 +27,7 @@ public:
         MachineNameRole,
         MuscleGroupRole,
         CommentRole,
+        EffortRirRole,
         OrderRole,
         SetCountRole,
         SetsRole
@@ -45,20 +46,23 @@ public:
     Q_INVOKABLE bool loadSession(int sessionId);
     Q_INVOKABLE bool endSessionNow();
     Q_INVOKABLE bool updateSessionNote(const QString &note);
+    Q_INVOKABLE bool updateSessionStarted(const QString &startedAt);
     Q_INVOKABLE bool deleteSession();
 
     Q_INVOKABLE int addExercise(const QVariant &machineId,
                                 const QVariant &customName,
-                                const QVariant &comment);
+                                const QVariant &comment,
+                                const QVariant &effortRir);
     Q_INVOKABLE bool updateExercise(int exerciseId,
                                     const QString &comment,
                                     int machineId,
-                                    const QString &customName);
+                                    const QString &customName,
+                                    const QVariant &effortRir);
     Q_INVOKABLE bool moveExercise(int exerciseId, int toIndex);
     Q_INVOKABLE bool removeExercise(int exerciseId);
 
-    Q_INVOKABLE int addSet(int exerciseId, int reps, double weight, double rpe, bool warmup);
-    Q_INVOKABLE bool updateSet(int setId, int reps, double weight, double rpe, bool warmup);
+    Q_INVOKABLE int addSet(int exerciseId, int reps, double weight);
+    Q_INVOKABLE bool updateSet(int setId, int reps, double weight);
     Q_INVOKABLE bool removeSet(int setId);
     Q_INVOKABLE QVariantList setsForExercise(int exerciseId) const;
     Q_INVOKABLE QVariantList debugExercises() const;

@@ -68,11 +68,11 @@ void SessionDetailModelTest::loadSession_readsExercisesAndSets() {
                     "VALUES (1, '2026-01-21T18:51:00', 'Test session')"));
     QVERIFY(execSql("INSERT INTO machines (id, name, muscle_group) "
                     "VALUES (1, 'Test Machine', 'B4')"));
-    QVERIFY(execSql("INSERT INTO exercises (id, session_id, machine_id, machine_name_snapshot, order_index, comment) "
-                    "VALUES (1, 1, 1, 'Test Machine', 0, 'Pulls')"));
-    QVERIFY(execSql("INSERT INTO exercise_sets (id, exercise_id, set_number, reps, weight_lbs, rpe, is_warmup) "
-                    "VALUES (1, 1, 1, 10, 100, 8.5, 0), "
-                           "(2, 1, 2, 8, 110, 9.0, 0)"));
+    QVERIFY(execSql("INSERT INTO exercises (id, session_id, machine_id, machine_name_snapshot, effort_rir, order_index, comment) "
+                    "VALUES (1, 1, 1, 'Test Machine', 2, 0, 'Pulls')"));
+    QVERIFY(execSql("INSERT INTO exercise_sets (id, exercise_id, set_number, reps, weight_lbs) "
+                    "VALUES (1, 1, 1, 10, 100), "
+                           "(2, 1, 2, 8, 110)"));
 
     SessionRepository repo(db);
     SessionDetailModel model;

@@ -49,6 +49,7 @@ CREATE TABLE IF NOT EXISTS exercises (
     session_id INTEGER NOT NULL,
     machine_id INTEGER,
     machine_name_snapshot TEXT,
+    effort_rir INTEGER,
     order_index INTEGER NOT NULL DEFAULT 0,
     comment TEXT,
     FOREIGN KEY (session_id) REFERENCES sessions(id) ON DELETE CASCADE,
@@ -63,8 +64,6 @@ CREATE TABLE IF NOT EXISTS exercise_sets (
     set_number INTEGER NOT NULL,
     reps INTEGER NOT NULL,
     weight_lbs REAL,
-    rpe REAL,
-    is_warmup INTEGER NOT NULL DEFAULT 0,
     FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE CASCADE,
     CHECK (set_number > 0),
     CHECK (reps >= 0),
@@ -190,26 +189,51 @@ bool Backend::ensureSchema(QSqlDatabase &db) const {
         return false;
     }
 
-    {
+    auto tableExists = [&](const QString &name) {
         QSqlQuery check(db);
-        if (check.exec(QStringLiteral("SELECT name FROM sqlite_master WHERE type='table' AND name='machines'"))) {
-            if (check.next()) {
-                return true;
+        check.prepare(QStringLiteral("SELECT name FROM sqlite_master WHERE type='table' AND name=?"));
+        check.addBindValue(name);
+        return check.exec() && check.next();
+    };
+
+    // Create baseline schema if missing core tables.
+    if (!tableExists(QStringLiteral("machines"))) {
+        const QStringList statements = splitStatements(baselineSchemaSql());
+        for (const QString &statement : statements) {
+            QSqlQuery query(db);
+            if (!query.exec(statement)) {
+                qWarning() << "Schema statement failed" << statement.left(80)
+                           << query.lastError().text();
+                return false;
             }
         }
+        qDebug() << "Baseline schema created in database" << db.connectionName();
     }
 
-    const QStringList statements = splitStatements(baselineSchemaSql());
-    for (const QString &statement : statements) {
-        QSqlQuery query(db);
-        if (!query.exec(statement)) {
-            qWarning() << "Schema statement failed" << statement.left(80)
-                       << query.lastError().text();
+    // Lightweight migrations for existing DBs ---------------------------------
+    auto columnMissing = [&](const QString &table, const QString &column) {
+        QSqlQuery q(db);
+        if (!q.exec(QStringLiteral("PRAGMA table_info(%1)").arg(table))) {
             return false;
         }
+        while (q.next()) {
+            if (q.value(1).toString().compare(column, Qt::CaseInsensitive) == 0) {
+                return false;
+            }
+        }
+        return true;
+    };
+
+    // Add effort_rir to exercises if absent (0–5, nullable)
+    if (columnMissing(QStringLiteral("exercises"), QStringLiteral("effort_rir"))) {
+        QSqlQuery alter(db);
+        if (!alter.exec(QStringLiteral("ALTER TABLE exercises ADD COLUMN effort_rir INTEGER"))) {
+            qWarning() << "Failed to add effort_rir column:" << alter.lastError().text();
+            return false;
+        }
+        qDebug() << "Added effort_rir column to exercises";
     }
 
-    qDebug() << "Baseline schema ensured in database" << db.connectionName();
     return true;
 }
 

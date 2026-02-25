@@ -2,6 +2,7 @@
 
 #include <QAbstractListModel>
 #include <QVector>
+#include <optional>
 #include <qqml.h>
 
 #include "../core/SessionRepository.h"
@@ -12,6 +13,7 @@ struct SessionExercise {
     QString machineName;
     QString muscleGroup;
     QString note;
+    std::optional<int> effortRir;
     QVector<QString> sets;  // simple string summary (e.g., "10 x 100 lbs")
 };
 
@@ -28,6 +30,7 @@ public:
         MachineNameRole = Qt::UserRole + 1,
         MuscleGroupRole,
         NoteRole,
+        EffortRirRole,
         SetsRole
     };
 

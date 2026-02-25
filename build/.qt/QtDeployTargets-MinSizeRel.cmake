@@ -1,6 +1,6 @@
 set(__QT_DEPLOY_TARGET_GymBackend_FILE C:/Z_Programming_Backup/Programming/projects/gymApp/build/MinSizeRel/GymBackend.lib)
 set(__QT_DEPLOY_TARGET_GymBackend_TYPE STATIC_LIBRARY)
-set(__QT_DEPLOY_TARGET_GymApp_FILE C:/Z_Programming_Backup/Programming/projects/gymApp/build/MinSizeRel/GymApp.exe)
+set(__QT_DEPLOY_TARGET_GymApp_FILE C:/Z_Programming_Backup/Programming/projects/gymApp/build/MinSizeRel/gymapp_bin.exe)
 set(__QT_DEPLOY_TARGET_GymApp_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_GymApp_RUNTIME_DLLS C:/Qt/6.8.2/msvc2022_64/bin/Qt6QuickControls2.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Sql.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6QuickTemplates2.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Quick.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6QmlMeta.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6QmlWorkerScript.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6OpenGL.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Gui.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6QmlModels.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Qml.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Network.dll;C:/Qt/6.8.2/msvc2022_64/bin/Qt6Core.dll)
 set(__QT_DEPLOY_TARGET_SessionDetailModelTest_FILE C:/Z_Programming_Backup/Programming/projects/gymApp/build/MinSizeRel/SessionDetailModelTest.exe)

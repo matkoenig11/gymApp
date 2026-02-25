@@ -8,6 +8,7 @@
 #include "core/SessionRepository.h"
 #include "core/ExerciseRepository.h"
 #include "core/SetRepository.h"
+#include "core/Clogger.h"
 #include "model/MachineListModel.h"
 #include "model/SessionDetailModel.h"
 #include "model/SessionListModel.h"
@@ -18,11 +19,15 @@ int main(int argc, char *argv[]) {
     app.setApplicationName(QStringLiteral("GymApp"));
     app.setOrganizationName(QStringLiteral("GymTracker"));
 
+    const QString logPath = QCoreApplication::applicationDirPath() + QStringLiteral("/clogger.log");
+    gym::Clogger::setLogFile(logPath);
+    gym::Clogger::debug(QStringLiteral("GymApp starting up"), gym::ELogColor::Green);
+
     gym::Backend backend(&app);
 
     const QString connectionName = QStringLiteral("gymapp");
     gym::DatabaseConfig config = backend.defaultSqliteConfig();
-    config.databaseName = QStringLiteral("C:/Z_Programming_Backup/Programming/projects/gymApp/gym.sqlite");
+    // config.databaseName = QStringLiteral("C:/Z_Programming_Backup/Programming/projects/gymApp/gym.sqlite");
 
     QSqlDatabase db = backend.openDatabase(connectionName, config);
     if (!db.isOpen()) {
@@ -57,7 +62,7 @@ int main(int argc, char *argv[]) {
 
     bool laodSession = sessionDetailModel && sessionDetailModel->loadSession(1);
 
-    const QUrl mainUrl(QStringLiteral("qrc:/GymApp/qml/Main.qml"));
+    const QUrl mainUrl(QStringLiteral("qrc:/qt/qml/GymApp/qml/Main.qml"));
     QObject::connect(
         &engine, &QQmlApplicationEngine::objectCreated,
         &app, [mainUrl](QObject *obj, const QUrl &objUrl) {

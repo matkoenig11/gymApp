@@ -3,7 +3,6 @@ C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_automoc_json_extraction.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_qmltyperegistration.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/all_qmltyperegistrations.dir
-C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_other_files.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_qmllint.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_qmllint_json.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_qmllint_module.dir
@@ -17,6 +16,7 @@ C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/all_qmllint
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/all_qmllint_module.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/module_GymApp_aotstats_target.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/all_aotstats.dir
+C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_qmlimportscan.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/RUN_TESTS.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/GymApp_autogen.dir
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/CMakeFiles/ALL_BUILD.dir

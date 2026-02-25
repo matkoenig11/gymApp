@@ -11,13 +11,16 @@
       <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\x64\Debug\GymApp_copy_res</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\x64\Debug\GymApp_qmlimportscan</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\x64\Debug\GymApp_autogen</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\x64\Debug\GymApp_automoc_json_extraction</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\Debug\GymApp.exe</FullPath>
+      <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\Debug\gymapp_bin.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Z_Programming_Backup\Programming\projects\gymApp\build\Debug\RepositoryCrudTest.exe</FullPath>

@@ -11,8 +11,6 @@ struct SetRow {
     int setNumber = 0;
     int reps = 0;
     double weightLbs = 0.0;
-    double rpe = 0.0;
-    bool isWarmup = false;
 };
 
 class SetRepository {
@@ -23,8 +21,8 @@ public:
     void setDatabase(const QSqlDatabase &db);
     bool isReady() const;
 
-    int addSet(int exerciseId, int setNumber, int reps, double weightLbs, double rpe, bool isWarmup);
-    bool updateSet(int setId, int setNumber, int reps, double weightLbs, double rpe, bool isWarmup);
+    int addSet(int exerciseId, int setNumber, int reps, double weightLbs);
+    bool updateSet(int setId, int setNumber, int reps, double weightLbs);
     bool removeSet(int setId);
     bool resequenceSets(int exerciseId);
 

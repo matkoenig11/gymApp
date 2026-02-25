@@ -83,6 +83,31 @@ Module {
         }
         Signal { name: "countChanged" }
         Method { name: "refresh" }
+        Method {
+            name: "addMachine"
+            type: "int"
+            Parameter { name: "name"; type: "QString" }
+            Parameter { name: "muscleGroup"; type: "QString" }
+            Parameter { name: "weightMin"; type: "int" }
+            Parameter { name: "weightMax"; type: "int" }
+            Parameter { name: "note"; type: "QString" }
+        }
+        Method {
+            name: "updateMachine"
+            type: "bool"
+            Parameter { name: "id"; type: "int" }
+            Parameter { name: "name"; type: "QString" }
+            Parameter { name: "muscleGroup"; type: "QString" }
+            Parameter { name: "weightMin"; type: "int" }
+            Parameter { name: "weightMax"; type: "int" }
+            Parameter { name: "note"; type: "QString" }
+            Parameter { name: "isActive"; type: "bool" }
+        }
+        Method {
+            name: "deleteMachine"
+            type: "bool"
+            Parameter { name: "id"; type: "int" }
+        }
     }
     Component {
         file: "SessionDetailModel.h"
@@ -179,6 +204,11 @@ Module {
             name: "updateSessionNote"
             type: "bool"
             Parameter { name: "note"; type: "QString" }
+        }
+        Method {
+            name: "updateSessionStarted"
+            type: "bool"
+            Parameter { name: "startedAt"; type: "QString" }
         }
         Method { name: "deleteSession"; type: "bool" }
         Method {

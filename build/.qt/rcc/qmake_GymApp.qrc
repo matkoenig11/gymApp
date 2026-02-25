@@ -1,6 +1,6 @@
 <RCC>
-  <qresource prefix="/GymApp">
-    <file alias="qmldir">C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir</file>
+  <qresource prefix="/qt/qml/GymApp">
+    <file alias="qmldir">C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir</file>
   </qresource>
 </RCC>
 

@@ -46,7 +46,19 @@
                 },
                 {
                     "access": "public",
+                    "arguments": [
+                        {
+                            "name": "startedAt",
+                            "type": "QString"
+                        }
+                    ],
                     "index": 6,
+                    "name": "updateSessionStarted",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
                     "name": "deleteSession",
                     "returnType": "bool"
                 },
@@ -64,9 +76,13 @@
                         {
                             "name": "comment",
                             "type": "QVariant"
+                        },
+                        {
+                            "name": "effortRir",
+                            "type": "QVariant"
                         }
                     ],
-                    "index": 7,
+                    "index": 8,
                     "name": "addExercise",
                     "returnType": "int"
                 },
@@ -88,9 +104,13 @@
                         {
                             "name": "customName",
                             "type": "QString"
+                        },
+                        {
+                            "name": "effortRir",
+                            "type": "QVariant"
                         }
                     ],
-                    "index": 8,
+                    "index": 9,
                     "name": "updateExercise",
                     "returnType": "bool"
                 },
@@ -106,7 +126,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 9,
+                    "index": 10,
                     "name": "moveExercise",
                     "returnType": "bool"
                 },
@@ -118,7 +138,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 10,
+                    "index": 11,
                     "name": "removeExercise",
                     "returnType": "bool"
                 },
@@ -136,17 +156,9 @@
                         {
                             "name": "weight",
                             "type": "double"
-                        },
-                        {
-                            "name": "rpe",
-                            "type": "double"
-                        },
-                        {
-                            "name": "warmup",
-                            "type": "bool"
                         }
                     ],
-                    "index": 11,
+                    "index": 12,
                     "name": "addSet",
                     "returnType": "int"
                 },
@@ -164,17 +176,9 @@
                         {
                             "name": "weight",
                             "type": "double"
-                        },
-                        {
-                            "name": "rpe",
-                            "type": "double"
-                        },
-                        {
-                            "name": "warmup",
-                            "type": "bool"
                         }
                     ],
-                    "index": 12,
+                    "index": 13,
                     "name": "updateSet",
                     "returnType": "bool"
                 },
@@ -186,7 +190,7 @@
                             "type": "int"
                         }
                     ],
-                    "index": 13,
+                    "index": 14,
                     "name": "removeSet",
                     "returnType": "bool"
                 },
@@ -198,13 +202,13 @@
                             "type": "int"
                         }
                     ],
-                    "index": 14,
+                    "index": 15,
                     "name": "setsForExercise",
                     "returnType": "QVariantList"
                 },
                 {
                     "access": "public",
-                    "index": 15,
+                    "index": 16,
                     "name": "debugExercises",
                     "returnType": "QVariantList"
                 }

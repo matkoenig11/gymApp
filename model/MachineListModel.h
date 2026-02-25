@@ -32,6 +32,19 @@ public:
 
     void setRepository(const MachineRepository &repository);
     Q_INVOKABLE void refresh();
+    Q_INVOKABLE int addMachine(const QString &name,
+                               const QString &muscleGroup,
+                               int weightMin,
+                               int weightMax,
+                               const QString &note);
+    Q_INVOKABLE bool updateMachine(int id,
+                                   const QString &name,
+                                   const QString &muscleGroup,
+                                   int weightMin,
+                                   int weightMax,
+                                   const QString &note,
+                                   bool isActive);
+    Q_INVOKABLE bool deleteMachine(int id);
 
 signals:
     void countChanged();

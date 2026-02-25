@@ -7,7 +7,7 @@ Rectangle {
     id: root
     property var listModel: MachineList
     property var loaderModel: null
-    width: parent ? parent.width : implicitWidth
+    // width: parent ? parent.width : implicitWidth
     radius: 6
     color: "#f8fafc"
     border.color: "#cbd5e1"
@@ -18,11 +18,11 @@ Rectangle {
 
     ColumnLayout {
         id: content
-        anchors.fill: parent
+        anchors.centerIn: parent
         anchors.margins: 12
         spacing: 8
-        Layout.fillWidth: true
 
+       
         RowLayout {
             spacing: 8
             Label {
@@ -31,24 +31,35 @@ Rectangle {
                 font.bold: true
                 Layout.alignment: Qt.AlignVCenter
             }
-            Rectangle {
-                radius: 12
-                color: "#e2e8f0"
-                Layout.alignment: Qt.AlignVCenter
-                Label {
-                    padding: 6
-                    text: listModel ? listModel.count + " items" : "0"
-                    font.pixelSize: 12
-                    color: "#334155"
-                }
+            Label {
+                padding: 6
+                text: listModel ? listModel.count + " items" : "0"
+                font.pixelSize: 12
+                color: "#334155"
             }
+        }
+
+        RowLayout {
             Button {
                 text: "Refresh"
                 onClicked: listModel && listModel.refresh()
                 Layout.alignment: Qt.AlignVCenter
             }
+            Button {
+                text: "Add"
+                onClicked: {
+                    editorTitle.text = "Add Machine"
+                    machineForm.idValue = -1
+                    machineForm.nameField.text = ""
+                    machineForm.muscleField.text = ""
+                    machineForm.minField.value = 0
+                    machineForm.maxField.value = 500
+                    machineForm.noteField.text = ""
+                    machineForm.activeBox.checked = true
+                    editorDialog.open()
+                }
+            }
         }
-
         // Label {
         //     visible: model && model.count === 0
         //     text: dbSeeded
@@ -61,17 +72,30 @@ Rectangle {
         ListView {
             id: listView
             Layout.fillWidth: true
-            implicitHeight: 300
+            implicitHeight:400 
+            implicitWidth: 300
 
             model: listModel
             clip: true
             delegate: MachineListItem {
                 width: ListView.view ? ListView.view.width : 0
+                machineId: model.id
                 name: model.name
                 muscleGroup: model.muscleGroup
                 weightMin: model.weightMin
                 weightMax: model.weightMax
                 note: note
+                onClicked: {
+                    editorTitle.text = "Edit Machine"
+                    machineForm.idValue = model.id
+                    machineForm.nameField.text = model.name
+                    machineForm.muscleField.text = model.muscleGroup
+                    machineForm.minField.value = model.weightMin
+                    machineForm.maxField.value = model.weightMax
+                    machineForm.noteField.text = model.note
+                    machineForm.activeBox.checked = true
+                    editorDialog.open()
+                }
             }
 
             footer: Item {
@@ -101,6 +125,68 @@ Rectangle {
                     }
                 }
             }
+        }
+    }
+
+    Dialog {
+        id: editorDialog
+        modal: true
+        standardButtons: Dialog.Save | Dialog.Cancel
+        title: ""
+        anchors.centerIn: Overlay.overlay
+        onAccepted: {
+            if (machineForm.idValue < 0) {
+                listModel.addMachine(
+                            machineForm.nameField.text,
+                            machineForm.muscleField.text,
+                            machineForm.minField.value,
+                            machineForm.maxField.value,
+                            machineForm.noteField.text)
+            } else {
+                listModel.updateMachine(
+                            machineForm.idValue,
+                            machineForm.nameField.text,
+                            machineForm.muscleField.text,
+                            machineForm.minField.value,
+                            machineForm.maxField.value,
+                            machineForm.noteField.text,
+                            machineForm.activeBox.checked)
+            }
+        }
+
+        footer: RowLayout {
+            spacing: 8
+            visible: machineForm.idValue >= 0
+            Button {
+                text: "Delete"
+                palette.button: "#fee2e2"
+                palette.buttonText: "#7f1d1d"
+                onClicked: {
+                    listModel.deleteMachine(machineForm.idValue)
+                    editorDialog.close()
+                }
+            }
+        }
+
+        ColumnLayout {
+            id: machineForm
+            property int idValue: -1
+            anchors.fill: parent
+            anchors.margins: 12
+            spacing: 8
+
+            Label { id: editorTitle; text: "Edit Machine"; font.bold: true; font.pixelSize: 16 }
+            TextField { id: nameField; placeholderText: "Name"; Layout.fillWidth: true }
+            TextField { id: muscleField; placeholderText: "Muscle group"; Layout.fillWidth: true }
+            RowLayout {
+                spacing: 6
+                SpinBox { id: minField; from: 0; to: 2000; value: 0; editable: true; Layout.preferredWidth: 100 }
+                Label { text: "to"; }
+                SpinBox { id: maxField; from: 0; to: 2000; value: 500; editable: true; Layout.preferredWidth: 100 }
+                Label { text: "lbs" }
+            }
+            TextArea { id: noteField; placeholderText: "Note"; Layout.fillWidth: true; Layout.preferredHeight: 80 }
+            CheckBox { id: activeBox; text: "Active"; checked: true }
         }
     }
 }

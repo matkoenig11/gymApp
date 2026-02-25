@@ -1,0 +1,68 @@
+# Build directories
+**/build/**
+build_alt/
+build_mobile/
+build_mobile2/
+Debug/
+Release/
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# CMake
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+CMakeCache.txt.*
+CTestTestfile.cmake
+*.cmake
+
+# Qt files
+*.qmlc
+*.jsc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.o
+*.a
+*.lib
+
+# VS Code / IDE
+.vscode/
+.vs/
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# General
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+*.tmp
+
+# SQLite database files (optional - keep or remove based on preference)
+# *.db
+# *.sqlite
+# *.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# Node/npm (if applicable)
+node_modules/
+npm-debug.log

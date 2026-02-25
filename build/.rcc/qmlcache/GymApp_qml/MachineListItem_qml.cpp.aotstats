@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 242,
+                        "durationMicroseconds": 276,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
                         "line": 9
@@ -14,26 +14,34 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 55,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 17
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 151,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 25
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 41,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 24
                     },
                     {
-                        "codegenSuccessfull": false,
-                        "column": 23,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
-                        "line": 29
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 31
                     },
                     {
                         "codegenSuccessfull": false,
@@ -41,7 +49,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 35
+                        "line": 36
                     },
                     {
                         "codegenSuccessfull": false,
@@ -49,7 +57,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 40
+                        "line": 42
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on text.",
+                        "functionName": "text",
+                        "line": 47
                     },
                     {
                         "codegenSuccessfull": false,
@@ -57,7 +73,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
                         "functionName": "wrapMode",
-                        "line": 43
+                        "line": 50
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListItem.qml"

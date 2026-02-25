@@ -6,23 +6,15 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 177,
+                        "durationMicroseconds": 173,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "listModel",
                         "line": 8
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 12,
-                        "durationMicroseconds": 178,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 10
-                    },
-                    {
-                        "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 110,
+                        "durationMicroseconds": 139,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
                         "line": 16
@@ -30,17 +22,17 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 88,
                         "errorMessage": "",
                         "functionName": "implicitWidth",
                         "line": 17
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 41,
+                        "column": 27,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
-                        "functionName": "fill",
+                        "functionName": "centerIn",
                         "line": 21
                     },
                     {
@@ -52,20 +44,12 @@
                         "line": 32
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 51,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 37
-                    },
-                    {
                         "codegenSuccessfull": false,
-                        "column": 27,
+                        "column": 23,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 40
+                        "line": 36
                     },
                     {
                         "codegenSuccessfull": false,
@@ -73,47 +57,63 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 47
+                        "line": 45
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 48
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 50
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name listModel",
                         "functionName": "model",
-                        "line": 66
+                        "line": 78
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 164,
+                        "durationMicroseconds": 183,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 69
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "machineId",
+                        "line": 82
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "name",
-                        "line": 70
+                        "line": 83
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 10,
+                        "durationMicroseconds": 8,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "muscleGroup",
-                        "line": 71
+                        "line": 84
                     },
                     {
                         "codegenSuccessfull": false,
@@ -121,7 +121,7 @@
                         "durationMicroseconds": 8,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "weightMin",
-                        "line": 72
+                        "line": 85
                     },
                     {
                         "codegenSuccessfull": false,
@@ -129,39 +129,47 @@
                         "durationMicroseconds": 8,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "weightMax",
-                        "line": 73
+                        "line": 86
                     },
                     {
-                        "codegenSuccessfull": true,
+                        "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 41,
-                        "errorMessage": "",
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot access value for name model",
                         "functionName": "note",
-                        "line": 74
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name editorTitle",
+                        "functionName": "onClicked",
+                        "line": 88
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 78
+                        "line": 102
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 19,
                         "errorMessage": "Cannot access value for name listModel",
                         "functionName": "height",
-                        "line": 79
+                        "line": 103
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 16,
                         "errorMessage": "Cannot access value for name listModel",
                         "functionName": "visible",
-                        "line": 84
+                        "line": 108
                     },
                     {
                         "codegenSuccessfull": true,
@@ -169,15 +177,15 @@
                         "durationMicroseconds": 42,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 81
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 51,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 88
+                        "line": 112
                     },
                     {
                         "codegenSuccessfull": false,
@@ -185,7 +193,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on enabled.",
                         "functionName": "enabled",
-                        "line": 92
+                        "line": 116
                     },
                     {
                         "codegenSuccessfull": false,
@@ -193,15 +201,79 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 93
+                        "line": 117
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 53,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 100
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on standardButtons.",
+                        "functionName": "standardButtons",
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onAccepted.",
+                        "functionName": "onAccepted",
+                        "line": 137
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on centerIn.",
+                        "functionName": "centerIn",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 104,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 192
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 193
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListCard.qml"

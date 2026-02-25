@@ -30,21 +30,19 @@ int SetRepository::nextSetNumber(int exerciseId) const {
     return 1;
 }
 
-int SetRepository::addSet(int exerciseId, int setNumber, int reps, double weightLbs, double rpe, bool isWarmup) {
+int SetRepository::addSet(int exerciseId, int setNumber, int reps, double weightLbs) {
     if (!isReady()) {
         return 0;
     }
 
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "INSERT INTO exercise_sets (exercise_id, set_number, reps, weight_lbs, rpe, is_warmup) "
-        "VALUES (?, ?, ?, ?, ?, ?)"));
+        "INSERT INTO exercise_sets (exercise_id, set_number, reps, weight_lbs) "
+        "VALUES (?, ?, ?, ?)"));
     q.addBindValue(exerciseId);
     q.addBindValue(setNumber);
     q.addBindValue(reps);
     q.addBindValue(weightLbs);
-    q.addBindValue(rpe);
-    q.addBindValue(isWarmup ? 1 : 0);
     if (!q.exec()) {
         qWarning() << "addSet failed:" << q.lastError().text();
         return 0;
@@ -52,19 +50,17 @@ int SetRepository::addSet(int exerciseId, int setNumber, int reps, double weight
     return q.lastInsertId().toInt();
 }
 
-bool SetRepository::updateSet(int setId, int setNumber, int reps, double weightLbs, double rpe, bool isWarmup) {
+bool SetRepository::updateSet(int setId, int setNumber, int reps, double weightLbs) {
     if (!isReady()) {
         return false;
     }
 
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "UPDATE exercise_sets SET set_number = ?, reps = ?, weight_lbs = ?, rpe = ?, is_warmup = ? WHERE id = ?"));
+        "UPDATE exercise_sets SET set_number = ?, reps = ?, weight_lbs = ? WHERE id = ?"));
     q.addBindValue(setNumber);
     q.addBindValue(reps);
     q.addBindValue(weightLbs);
-    q.addBindValue(rpe);
-    q.addBindValue(isWarmup ? 1 : 0);
     q.addBindValue(setId);
     if (!q.exec()) {
         qWarning() << "updateSet failed:" << q.lastError().text();
@@ -137,7 +133,7 @@ QVector<SetRow> SetRepository::fetchSets(int exerciseId) const {
 
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "SELECT id, exercise_id, set_number, reps, weight_lbs, COALESCE(rpe, 0), COALESCE(is_warmup, 0) "
+        "SELECT id, exercise_id, set_number, reps, weight_lbs "
         "FROM exercise_sets WHERE exercise_id = ? ORDER BY set_number ASC, id ASC"));
     q.addBindValue(exerciseId);
     if (!q.exec()) {
@@ -152,8 +148,6 @@ QVector<SetRow> SetRepository::fetchSets(int exerciseId) const {
         r.setNumber = q.value(2).toInt();
         r.reps = q.value(3).toInt();
         r.weightLbs = q.value(4).toDouble();
-        r.rpe = q.value(5).toDouble();
-        r.isWarmup = q.value(6).toInt() != 0;
         rows.append(r);
     }
     return rows;

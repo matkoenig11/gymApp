@@ -1,6 +1,7 @@
 #include "SessionListModel.h"
 
 #include <QDebug>
+#include <QDateTime>
 
 namespace gym {
 
@@ -24,7 +25,7 @@ QVariant SessionListModel::data(const QModelIndex &index, int role) const {
     case IdRole:
         return session.id;
     case StartedAtRole:
-        return session.startedAt;
+        return QDateTime::fromString(session.startedAt, Qt::ISODate).toString("yyyy-MM-dd hh:mm");
     case EndedAtRole:
         return session.endedAt;
     case NoteRole:

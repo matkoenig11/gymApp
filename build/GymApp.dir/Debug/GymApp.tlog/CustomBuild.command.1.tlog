@@ -12,7 +12,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\BUILD\CMAKEFILES\E896D153370EAC70BAF705E3A4B6D052\GYMAPP_QMLTYPEREGISTRATIONS.CPP.RULE
 setlocal
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmltyperegistrar.exe --generate-qmltypes=C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/GymApp.qmltypes --import-name=GymApp --major-version=1 --minor-version=0 @C:/Z_Programming_Backup/Programming/projects/gymApp/build/qmltypes/GymApp_foreign_types.txt -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/gymapp_qmltyperegistrations.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/build/meta_types/qt6gymapp_metatypes.json
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmltyperegistrar.exe --generate-qmltypes=C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/GymApp.qmltypes --import-name=GymApp --major-version=1 --minor-version=0 @C:/Z_Programming_Backup/Programming/projects/gymApp/build/qmltypes/GymApp_foreign_types.txt -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/gymapp_qmltyperegistrations.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/build/meta_types/qt6gymapp_metatypes.json
 if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/qmltypes
 if %errorlevel% neq 0 goto :cmEnd
@@ -48,7 +48,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/Main.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/Main_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Main.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/Main.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/Main_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Main.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -60,7 +60,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/HeaderBar.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/HeaderBar_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/HeaderBar.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/HeaderBar_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -72,7 +72,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/DatabaseCard.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/DatabaseCard_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/DatabaseCard.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/DatabaseCard.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/DatabaseCard_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/DatabaseCard.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -84,7 +84,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/MachineListCard.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/MachineListCard_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListCard.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/MachineListCard.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/MachineListCard_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListCard.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -96,7 +96,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/MachineListItem.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/MachineListItem_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListItem.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/MachineListItem.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/MachineListItem_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/MachineListItem.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -108,7 +108,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/SessionView.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionView_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionView.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/SessionView.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionView_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionView.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -120,7 +120,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/SessionListPage.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionListPage_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionListPage.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/SessionListPage.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionListPage_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionListPage.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -132,7 +132,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/SessionEditorPane.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionEditorPane_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/SessionEditorPane.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SessionEditorPane_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -144,7 +144,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/ExerciseCardEditor.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/ExerciseCardEditor_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ExerciseCardEditor.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/ExerciseCardEditor.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/ExerciseCardEditor_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ExerciseCardEditor.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -156,7 +156,7 @@ if %errorlevel% neq 0 goto :VCEnd
 setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml
 if %errorlevel% neq 0 goto :cmEnd
-call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /GymApp/qml/SetRowEditor.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SetRowEditor_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml
+call .qt\bin\qt_setup_tool_path.bat C:/Qt/6.8.2/msvc2022_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/GymApp/qml/SetRowEditor.qml -I C:/Z_Programming_Backup/Programming/projects/gymApp/build -I C:/Qt/6.8.2/msvc2022_64/qml -i C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qmldir --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --resource C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --dump-aot-stats --module-id=GymApp(GymApp) -o C:/Z_Programming_Backup/Programming/projects/gymApp/build/.rcc/qmlcache/GymApp_qml/SetRowEditor_qml.cpp C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -177,6 +177,16 @@ if %errorlevel% neq 0 goto :VCEnd
 ^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\BUILD\CMAKEFILES\5F73D09F970768362A6679F5B9BAB162\QRC_DATA.CPP.RULE
 setlocal
 C:\Qt\6.8.2\msvc2022_64\bin\rcc.exe --output C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qrc_data.cpp --name data C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\Z_PROGRAMMING_BACKUP\PROGRAMMING\PROJECTS\GYMAPP\BUILD\CMAKEFILES\5F73D09F970768362A6679F5B9BAB162\QRC_CONTROLS.CPP.RULE
+setlocal
+C:\Qt\6.8.2\msvc2022_64\bin\rcc.exe --output C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qrc_controls.cpp --name controls C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc --no-zstd
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

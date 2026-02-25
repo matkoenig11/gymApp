@@ -6,42 +6,58 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 169,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 20
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 22,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 25
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 118,
+                        "durationMicroseconds": 145,
                         "errorMessage": "",
                         "functionName": "onClicked",
-                        "line": 24
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 31
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 76,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 38
+                        "line": 45
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 42
+                        "line": 49
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 68,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 46
+                        "line": 53
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml"

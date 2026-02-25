@@ -7,21 +7,49 @@ ColumnLayout {
     id: root
     property int selectedSessionId: -1
 
+    onSelectedSessionIdChanged: {
+        console.log("[SessionEditorPane] selectedSessionId changed from", SessionEditor.sessionId, "to", selectedSessionId)
+        if (selectedSessionId >= 0 && SessionEditor.sessionId !== selectedSessionId) {
+            SessionEditor.loadSession(selectedSessionId)
+        }
+    }
+
     spacing: 10
     Layout.fillWidth: true
     Layout.fillHeight: true
-
+ 
     RowLayout {
         spacing: 8
         Layout.fillWidth: true
-        Label {
-            text: SessionEditor.sessionId > 0
-                  ? "Session #" + SessionEditor.sessionId + " (" + SessionEditor.sessionStarted + ")"
-                  : "New Session"
-            font.pixelSize: 16
-            font.bold: true
-            color: "#0f172a"
+        ColumnLayout {
             Layout.fillWidth: true
+            spacing: 2
+            Label {
+                text: SessionEditor.sessionId > 0
+                      ? "Session #" + SessionEditor.sessionId
+                      : "New Session"
+                font.pixelSize: 16
+                font.bold: true
+                color: "#0f172a"
+                Layout.fillWidth: true
+            }
+            RowLayout {
+                spacing: 6
+                Label { text: "Started:"; color: "#334155" }
+                TextField {
+                    id: startedAtField
+                    text: SessionEditor.sessionStarted
+                    placeholderText: "YYYY-MM-DD or ISO date"
+                    Layout.preferredWidth: 220
+                }
+                Button {
+                    text: "Save Date"
+                    onClicked: {
+                        SessionEditor.updateSessionStarted(startedAtField.text)
+                        SessionList.refresh()
+                    }
+                }
+            }
         }
         Button {
             text: "End Session"
@@ -42,53 +70,9 @@ ColumnLayout {
                 SessionList.refresh()
             }
         }
-        Button {
-            text: "Refresh"
-            onClicked: {
-                if (SessionEditor.sessionId > 0) {
-                    SessionEditor.loadSession(SessionEditor.sessionId)  
-                    SessionList.refresh()
-                    SessionDetail.loadSession(SessionEditor.sessionId)
-                }
-            }
-        }
     }
 
-    Label {
-        text: "Step 1: Add exercises to this session. Step 2: Open each exercise card to add or edit sets."
-        color: "#475569"
-        wrapMode: Text.Wrap
-        Layout.fillWidth: true
-    }
-
-    GroupBox {
-        title: "Session Note"
-        Layout.fillWidth: true
-        Layout.preferredHeight: 120
-
-        ColumnLayout {
-            anchors.fill: parent
-            anchors.margins: 6
-            TextArea {
-                id: noteArea
-                text: SessionEditor.sessionNote
-                placeholderText: "How you felt, focus, duration..."
-                wrapMode: TextArea.Wrap
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-            }
-            Button {
-                text: "Save Note"
-                onClicked: {
-                    SessionEditor.updateSessionNote(noteArea.text)
-                    SessionList.refresh()
-                    if (SessionEditor.sessionId > 0)
-                        SessionDetail.loadSession(SessionEditor.sessionId)
-                }
-                Layout.alignment: Qt.AlignLeft
-            }
-        }
-    }
+    
 
     GroupBox {
         title: "Add Exercise"
@@ -123,7 +107,6 @@ ColumnLayout {
                         const machineId = machineCombo.currentValue || 0
                         SessionEditor.addExercise(machineId, customName.text, exerciseComment.text)
                         SessionList.refresh()
-                        SessionEditor.loadSession(SessionEditor.sessionId) // Force reload to get new exerciseId
                         SessionDetail.loadSession(SessionEditor.sessionId)
                         exerciseComment.text = ""
                         customName.text = ""
@@ -136,19 +119,20 @@ ColumnLayout {
     ListView {
         id: exerciseList
         Layout.fillWidth: true
-        Layout.fillHeight: true
+        Layout.preferredHeight: 300
+        implicitHeight: Math.max(contentHeight, 200)
         clip: true
         spacing: 8
         model: SessionEditor
-        // delegate: ExerciseCardEditor {
-        //     width: ListView.view ? ListView.view.width : 0
-        //     exerciseId: model.exerciseId
-        //     machineName: model.machineName
-        //     muscleGroup: model.muscleGroup
-        //     comment: model.comment
-        //     sets: model.sets
-        //     listIndex: index
-        // }
+        delegate: ExerciseCardEditor {
+            width: ListView.view ? ListView.view.width : 0
+            exerciseId: model.exerciseId
+            machineName: model.machineName
+            muscleGroup: model.muscleGroup
+            comment: model.comment
+            sets: model.sets
+            listIndex: index
+        }
         Component.onCompleted: {
             console.log("[SessionEditorPane] ListView completed; count =", SessionEditor.count)
         }
@@ -158,27 +142,6 @@ ColumnLayout {
             target: SessionEditor
             function onCountChanged() {
                 console.log("[SessionEditorPane] ListView count changed;", SessionEditor.count)
-            }
-        }
-
-        delegate: Rectangle {
-            implicitWidth: 400
-            implicitHeight: 80
-            ColumnLayout {
-                id: exerciseCard
-                anchors.fill: parent
-                Label {
-                    text: model.machineName + (model.customName ? " - " + model.customName : "")
-                    font.pixelSize: 14
-                    font.bold: true
-                    color: "#0f172a"
-                }
-                Label {
-                    text: model.comment
-                    color: "#475569"
-                    wrapMode: Text.Wrap
-                    visible: model.comment.length > 0
-                }
             }
         }
         footer: Label {
@@ -195,6 +158,43 @@ ColumnLayout {
             console.log("[SessionEditorPane] count changed;", SessionEditor.count)
         }
     }
+    GroupBox {
+        title: "Session Note"
+        Layout.fillWidth: true
+        Layout.preferredHeight: 120
+
+        ColumnLayout {
+            anchors.fill: parent
+            anchors.margins: 6
+            TextArea {
+                id: noteArea
+                text: SessionEditor.sessionNote
+                placeholderText: "How you felt, focus, duration..."
+                wrapMode: TextArea.Wrap
+                Layout.fillWidth: true
+    Layout.fillHeight: true
+            }
+            Connections {
+                target: SessionEditor
+                function onSessionChanged() {
+                    noteArea.text = SessionEditor.sessionNote
+                    startedAtField.text = SessionEditor.sessionStarted
+                    console.log("[SessionEditorPane] SessionChanged signal; note length", noteArea.text.length,
+                                "sessionId", SessionEditor.sessionId)
+                }
+            }
+            Button {
+                text: "Save Note"
+                onClicked: {
+                    SessionEditor.updateSessionNote(noteArea.text)
+                    SessionList.refresh()
+                    if (SessionEditor.sessionId > 0)
+                        SessionDetail.loadSession(SessionEditor.sessionId)
+                }
+                Layout.alignment: Qt.AlignLeft
+            }
+        }
+    }
 
     Connections {
         target: SessionEditor
@@ -209,8 +209,6 @@ ColumnLayout {
             if (SessionEditor.sessionId > 0) {
                 SessionList.refresh()
                 SessionDetail.loadSession(SessionEditor.sessionId)
-            
-                SessionEditor.loadSession(SessionEditor.sessionId) // Force reload to get new exerciseId for added exercise
             }
         }
     }

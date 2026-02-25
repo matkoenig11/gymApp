@@ -45,6 +45,16 @@ static constexpr auto qt_meta_stringdata_ZN3gym16MachineListModelE = QtMocHelper
     "countChanged",
     "",
     "refresh",
+    "addMachine",
+    "name",
+    "muscleGroup",
+    "weightMin",
+    "weightMax",
+    "note",
+    "updateMachine",
+    "id",
+    "isActive",
+    "deleteMachine",
     "count"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -57,8 +67,8 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3gym16MachineListModelE[] = {
       12,       // revision
        0,       // classname
        2,   14, // classinfo
-       2,   18, // methods
-       1,   32, // properties
+       5,   18, // methods
+       1,   79, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -69,19 +79,25 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3gym16MachineListModelE[] = {
        3,    4,
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,   30,    6, 0x06,    2 /* Public */,
+       5,    0,   48,    6, 0x06,    2 /* Public */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       7,    0,   31,    6, 0x02,    3 /* Public */,
+       7,    0,   49,    6, 0x02,    3 /* Public */,
+       8,    5,   50,    6, 0x02,    4 /* Public */,
+      14,    7,   61,    6, 0x02,   10 /* Public */,
+      17,    1,   76,    6, 0x02,   18 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
 
  // methods: parameters
     QMetaType::Void,
+    QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::Int, QMetaType::QString,    9,   10,   11,   12,   13,
+    QMetaType::Bool, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::Int, QMetaType::QString, QMetaType::Bool,   15,    9,   10,   11,   12,   13,   16,
+    QMetaType::Bool, QMetaType::Int,   15,
 
  // properties: name, type, flags, notifyId, revision
-       8, QMetaType::Int, 0x00015001, uint(0), 0,
+      18, QMetaType::Int, 0x00015001, uint(0), 0,
 
        0        // eod
 };
@@ -100,7 +116,26 @@ Q_CONSTINIT const QMetaObject gym::MachineListModel::staticMetaObject = { {
         // method 'countChanged'
         void,
         // method 'refresh'
-        void
+        void,
+        // method 'addMachine'
+        int,
+        const QString &,
+        const QString &,
+        int,
+        int,
+        const QString &,
+        // method 'updateMachine'
+        bool,
+        int,
+        const QString &,
+        const QString &,
+        int,
+        int,
+        const QString &,
+        bool,
+        // method 'deleteMachine'
+        bool,
+        int
     >,
     nullptr
 } };
@@ -112,6 +147,12 @@ void gym::MachineListModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         switch (_id) {
         case 0: _t->countChanged(); break;
         case 1: _t->refresh(); break;
+        case 2: { int _r = _t->addMachine((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[5])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 3: { bool _r = _t->updateMachine((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[6])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[7])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 4: { bool _r = _t->deleteMachine((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     }
@@ -153,14 +194,14 @@ int gym::MachineListModel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 5;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

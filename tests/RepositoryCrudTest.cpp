@@ -34,7 +34,7 @@ void RepositoryCrudTest::crud_flow() {
     QVERIFY(execSql("CREATE TABLE sessions (id INTEGER PRIMARY KEY, started_at TEXT, ended_at TEXT, note TEXT)"));
     QVERIFY(execSql("CREATE TABLE machines (id INTEGER PRIMARY KEY, name TEXT, muscle_group TEXT)"));
     QVERIFY(execSql("CREATE TABLE exercises (id INTEGER PRIMARY KEY, session_id INTEGER NOT NULL, machine_id INTEGER, machine_name_snapshot TEXT, order_index INTEGER NOT NULL DEFAULT 0, comment TEXT, FOREIGN KEY(session_id) REFERENCES sessions(id) ON DELETE CASCADE)"));
-    QVERIFY(execSql("CREATE TABLE exercise_sets (id INTEGER PRIMARY KEY, exercise_id INTEGER NOT NULL, set_number INTEGER NOT NULL, reps INTEGER NOT NULL, weight_lbs REAL, rpe REAL, is_warmup INTEGER NOT NULL DEFAULT 0, UNIQUE(exercise_id, set_number), FOREIGN KEY(exercise_id) REFERENCES exercises(id) ON DELETE CASCADE)"));
+    QVERIFY(execSql("CREATE TABLE exercise_sets (id INTEGER PRIMARY KEY, exercise_id INTEGER NOT NULL, set_number INTEGER NOT NULL, reps INTEGER NOT NULL, weight_lbs REAL, UNIQUE(exercise_id, set_number), FOREIGN KEY(exercise_id) REFERENCES exercises(id) ON DELETE CASCADE)"));
 
     SessionRepository sessionRepo(db);
     ExerciseRepository exerciseRepo(db);
@@ -47,8 +47,8 @@ void RepositoryCrudTest::crud_flow() {
     const int exId = exerciseRepo.addExercise(sessionId, 1, QString(), "Warmup", -1);
     QVERIFY(exId > 0);
 
-    int set1 = setRepo.addSet(exId, 1, 10, 95.0, 6.5, true);
-    int set2 = setRepo.addSet(exId, 2, 8, 135.0, 8.0, false);
+    int set1 = setRepo.addSet(exId, 1, 10, 95.0);
+    int set2 = setRepo.addSet(exId, 2, 8, 135.0);
     QVERIFY(set1 > 0 && set2 > 0);
 
     QVector<ExerciseRow> exRows = exerciseRepo.fetchExercises(sessionId);
@@ -59,7 +59,7 @@ void RepositoryCrudTest::crud_flow() {
     QCOMPARE(setRows.size(), 2);
     QCOMPARE(setRows.at(1).setNumber, 2);
 
-    QVERIFY(setRepo.updateSet(set2, 2, 9, 135.0, 8.5, false));
+    QVERIFY(setRepo.updateSet(set2, 2, 9, 135.0));
     setRows = setRepo.fetchSets(exId);
     QCOMPARE(setRows.at(1).reps, 9);
 

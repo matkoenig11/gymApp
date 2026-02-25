@@ -51,12 +51,15 @@ static constexpr auto qt_meta_stringdata_ZN3gym18SessionEditorModelE = QtMocHelp
     "endSessionNow",
     "updateSessionNote",
     "note",
+    "updateSessionStarted",
+    "startedAt",
     "deleteSession",
     "addExercise",
     "QVariant",
     "machineId",
     "customName",
     "comment",
+    "effortRir",
     "updateExercise",
     "exerciseId",
     "moveExercise",
@@ -65,8 +68,6 @@ static constexpr auto qt_meta_stringdata_ZN3gym18SessionEditorModelE = QtMocHelp
     "addSet",
     "reps",
     "weight",
-    "rpe",
-    "warmup",
     "updateSet",
     "setId",
     "removeSet",
@@ -87,8 +88,8 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3gym18SessionEditorModelE[] = {
       12,       // revision
        0,       // classname
        2,   14, // classinfo
-      16,   18, // methods
-       4,  178, // properties
+      17,   18, // methods
+       4,  183, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
@@ -99,24 +100,25 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3gym18SessionEditorModelE[] = {
        3,    4,
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       5,    0,  114,    6, 0x06,    5 /* Public */,
-       7,    0,  115,    6, 0x06,    6 /* Public */,
-       8,    0,  116,    6, 0x06,    7 /* Public */,
+       5,    0,  120,    6, 0x06,    5 /* Public */,
+       7,    0,  121,    6, 0x06,    6 /* Public */,
+       8,    0,  122,    6, 0x06,    7 /* Public */,
 
  // methods: name, argc, parameters, tag, flags, initial metatype offsets
-       9,    1,  117,    6, 0x02,    8 /* Public */,
-      11,    0,  120,    6, 0x02,   10 /* Public */,
-      12,    1,  121,    6, 0x02,   11 /* Public */,
-      14,    0,  124,    6, 0x02,   13 /* Public */,
-      15,    3,  125,    6, 0x02,   14 /* Public */,
-      20,    4,  132,    6, 0x02,   18 /* Public */,
-      22,    2,  141,    6, 0x02,   23 /* Public */,
-      24,    1,  146,    6, 0x02,   26 /* Public */,
-      25,    5,  149,    6, 0x02,   28 /* Public */,
-      30,    5,  160,    6, 0x02,   34 /* Public */,
-      32,    1,  171,    6, 0x02,   40 /* Public */,
-      33,    1,  174,    6, 0x102,   42 /* Public | MethodIsConst  */,
-      35,    0,  177,    6, 0x102,   44 /* Public | MethodIsConst  */,
+       9,    1,  123,    6, 0x02,    8 /* Public */,
+      11,    0,  126,    6, 0x02,   10 /* Public */,
+      12,    1,  127,    6, 0x02,   11 /* Public */,
+      14,    1,  130,    6, 0x02,   13 /* Public */,
+      16,    0,  133,    6, 0x02,   15 /* Public */,
+      17,    4,  134,    6, 0x02,   16 /* Public */,
+      23,    5,  143,    6, 0x02,   21 /* Public */,
+      25,    2,  154,    6, 0x02,   27 /* Public */,
+      27,    1,  159,    6, 0x02,   30 /* Public */,
+      28,    3,  162,    6, 0x02,   32 /* Public */,
+      31,    3,  169,    6, 0x02,   36 /* Public */,
+      33,    1,  176,    6, 0x02,   40 /* Public */,
+      34,    1,  179,    6, 0x102,   42 /* Public | MethodIsConst  */,
+      36,    0,  182,    6, 0x102,   44 /* Public | MethodIsConst  */,
 
  // signals: parameters
     QMetaType::Void,
@@ -127,22 +129,23 @@ Q_CONSTINIT static const uint qt_meta_data_ZN3gym18SessionEditorModelE[] = {
     QMetaType::Bool, QMetaType::Int,   10,
     QMetaType::Bool,
     QMetaType::Bool, QMetaType::QString,   13,
+    QMetaType::Bool, QMetaType::QString,   15,
     QMetaType::Bool,
-    QMetaType::Int, 0x80000000 | 16, 0x80000000 | 16, 0x80000000 | 16,   17,   18,   19,
-    QMetaType::Bool, QMetaType::Int, QMetaType::QString, QMetaType::Int, QMetaType::QString,   21,   19,   17,   18,
-    QMetaType::Bool, QMetaType::Int, QMetaType::Int,   21,   23,
-    QMetaType::Bool, QMetaType::Int,   21,
-    QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Double, QMetaType::Double, QMetaType::Bool,   21,   26,   27,   28,   29,
-    QMetaType::Bool, QMetaType::Int, QMetaType::Int, QMetaType::Double, QMetaType::Double, QMetaType::Bool,   31,   26,   27,   28,   29,
-    QMetaType::Bool, QMetaType::Int,   31,
-    0x80000000 | 34, QMetaType::Int,   21,
-    0x80000000 | 34,
+    QMetaType::Int, 0x80000000 | 18, 0x80000000 | 18, 0x80000000 | 18, 0x80000000 | 18,   19,   20,   21,   22,
+    QMetaType::Bool, QMetaType::Int, QMetaType::QString, QMetaType::Int, QMetaType::QString, 0x80000000 | 18,   24,   21,   19,   20,   22,
+    QMetaType::Bool, QMetaType::Int, QMetaType::Int,   24,   26,
+    QMetaType::Bool, QMetaType::Int,   24,
+    QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Double,   24,   29,   30,
+    QMetaType::Bool, QMetaType::Int, QMetaType::Int, QMetaType::Double,   32,   29,   30,
+    QMetaType::Bool, QMetaType::Int,   32,
+    0x80000000 | 35, QMetaType::Int,   24,
+    0x80000000 | 35,
 
  // properties: name, type, flags, notifyId, revision
       10, QMetaType::Int, 0x00015001, uint(1), 0,
-      36, QMetaType::QString, 0x00015001, uint(1), 0,
       37, QMetaType::QString, 0x00015001, uint(1), 0,
-      38, QMetaType::Int, 0x00015001, uint(0), 0,
+      38, QMetaType::QString, 0x00015001, uint(1), 0,
+      39, QMetaType::Int, 0x00015001, uint(0), 0,
 
        0        // eod
 };
@@ -178,10 +181,14 @@ Q_CONSTINIT const QMetaObject gym::SessionEditorModel::staticMetaObject = { {
         // method 'updateSessionNote'
         bool,
         const QString &,
+        // method 'updateSessionStarted'
+        bool,
+        const QString &,
         // method 'deleteSession'
         bool,
         // method 'addExercise'
         int,
+        const QVariant &,
         const QVariant &,
         const QVariant &,
         const QVariant &,
@@ -191,6 +198,7 @@ Q_CONSTINIT const QMetaObject gym::SessionEditorModel::staticMetaObject = { {
         const QString &,
         int,
         const QString &,
+        const QVariant &,
         // method 'moveExercise'
         bool,
         int,
@@ -203,15 +211,11 @@ Q_CONSTINIT const QMetaObject gym::SessionEditorModel::staticMetaObject = { {
         int,
         int,
         double,
-        double,
-        bool,
         // method 'updateSet'
         bool,
         int,
         int,
         double,
-        double,
-        bool,
         // method 'removeSet'
         bool,
         int,
@@ -238,25 +242,27 @@ void gym::SessionEditorModel::qt_static_metacall(QObject *_o, QMetaObject::Call 
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         case 5: { bool _r = _t->updateSessionNote((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 6: { bool _r = _t->deleteSession();
+        case 6: { bool _r = _t->updateSessionStarted((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 7: { int _r = _t->addExercise((*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[3])));
+        case 7: { bool _r = _t->deleteSession();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 8: { int _r = _t->addExercise((*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[4])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
-        case 8: { bool _r = _t->updateExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])));
+        case 9: { bool _r = _t->updateExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<QVariant>>(_a[5])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 9: { bool _r = _t->moveExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])));
+        case 10: { bool _r = _t->moveExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 10: { bool _r = _t->removeExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+        case 11: { bool _r = _t->removeExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 11: { int _r = _t->addSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[5])));
+        case 12: { int _r = _t->addSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[3])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
-        case 12: { bool _r = _t->updateSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<bool>>(_a[5])));
+        case 13: { bool _r = _t->updateSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[3])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 13: { bool _r = _t->removeSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+        case 14: { bool _r = _t->removeSet((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 14: { QVariantList _r = _t->setsForExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
+        case 15: { QVariantList _r = _t->setsForExercise((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
-        case 15: { QVariantList _r = _t->debugExercises();
+        case 16: { QVariantList _r = _t->debugExercises();
             if (_a[0]) *reinterpret_cast< QVariantList*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -316,14 +322,14 @@ int gym::SessionEditorModel::qt_metacall(QMetaObject::Call _c, int _id, void **_
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 16)
+        if (_id < 17)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 16;
+        _id -= 17;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 16)
+        if (_id < 17)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 16;
+        _id -= 17;
     }
     if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty

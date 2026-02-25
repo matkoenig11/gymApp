@@ -1,5 +1,0 @@
-DB connection ready "gymapp" "QSQLITE" "C:/Z_Programming_Backup/Programming/projects/gymApp/gym.sqlite"
-MachineListModel: loaded 4 machines
-SessionListModel: loaded 1 sessions
-SessionDetailModel: loading session 1
-SessionDetailModel: loaded session 1 exercises 4

@@ -5,70 +5,70 @@
 #include <QtCore/qstring.h>
 
 namespace QmlCacheGeneratedCode {
-namespace _0x5f_GymApp_qml_Main_qml { 
+namespace _qt_qml_GymApp_qml_Main_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_HeaderBar_qml { 
+namespace _qt_qml_GymApp_qml_HeaderBar_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_DatabaseCard_qml { 
+namespace _qt_qml_GymApp_qml_DatabaseCard_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_MachineListCard_qml { 
+namespace _qt_qml_GymApp_qml_MachineListCard_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_MachineListItem_qml { 
+namespace _qt_qml_GymApp_qml_MachineListItem_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_SessionView_qml { 
+namespace _qt_qml_GymApp_qml_SessionView_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_SessionListPage_qml { 
+namespace _qt_qml_GymApp_qml_SessionListPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_SessionEditorPane_qml { 
+namespace _qt_qml_GymApp_qml_SessionEditorPane_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_ExerciseCardEditor_qml { 
+namespace _qt_qml_GymApp_qml_ExerciseCardEditor_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_GymApp_qml_SetRowEditor_qml { 
+namespace _qt_qml_GymApp_qml_SetRowEditor_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
     const QQmlPrivate::CachedQmlUnit unit = {
@@ -89,16 +89,16 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 
 Registry::Registry() {
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/Main.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_Main_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/HeaderBar.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_HeaderBar_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/DatabaseCard.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_DatabaseCard_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/MachineListCard.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_MachineListCard_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/MachineListItem.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_MachineListItem_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/SessionView.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_SessionView_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/SessionListPage.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_SessionListPage_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/SessionEditorPane.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_SessionEditorPane_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/ExerciseCardEditor.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_ExerciseCardEditor_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/GymApp/qml/SetRowEditor.qml"), &QmlCacheGeneratedCode::_0x5f_GymApp_qml_SetRowEditor_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/HeaderBar.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_HeaderBar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/DatabaseCard.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_DatabaseCard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/MachineListCard.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_MachineListCard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/MachineListItem.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_MachineListItem_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SessionView.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SessionView_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SessionListPage.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SessionListPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SessionEditorPane.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SessionEditorPane_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/ExerciseCardEditor.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_ExerciseCardEditor_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SetRowEditor.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SetRowEditor_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

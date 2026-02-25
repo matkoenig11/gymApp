@@ -25,6 +25,20 @@ public:
     bool isReady() const;
 
     QVector<Machine> fetchAllActive() const;
+    Machine fetchOne(int id) const;
+    int addMachine(const QString &name,
+                   const QString &muscleGroup,
+                   int weightMin,
+                   int weightMax,
+                   const QString &note);
+    bool updateMachine(int id,
+                       const QString &name,
+                       const QString &muscleGroup,
+                       int weightMin,
+                       int weightMax,
+                       const QString &note,
+                       bool isActive = true);
+    bool softDeleteMachine(int id);
 
 private:
     QSqlDatabase db_;

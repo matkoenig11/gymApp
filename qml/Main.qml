@@ -8,76 +8,64 @@ import GymApp
 
 ApplicationWindow {
     id: window
-    width: 1400
-    height: 620
+    property int defaultFontSize: 18
+    property int baseMargin: Math.max(width * 0.04, 12)
+
+    width: 480
+    height: 860
     visible: true
     title: "Gym Tracker Prototype"
     Material.theme: Material.Light
 
     header: HeaderBar {
         titleText: qsTr("Gym Tracker")
+        showBack: navStack.depth > 1
+        onBack: navStack.pop()
         onImportSqlite: sqliteDialog.open()
         onImportJson: console.log("Import JSON action not wired yet")
         onExportJson: console.log("Export JSON action not wired yet")
     }
 
-    ScrollView {
-        id: scroll
+    StackView {
+        id: navStack
         anchors.fill: parent
-        // anchors.margins: 12
-            // clip: true
-        Rectangle {
-            anchors.fill: parent
-            color: "#30527e"
-        }
-        ColumnLayout {
-            id: content
-            anchors.fill: parent
-            // spacing: 12
+        anchors.margins: baseMargin
+        initialItem: Component {
+            ColumnLayout {
+                anchors.fill: parent
+                spacing: 12
 
-            TabBar {
-                id: tabs
-                Layout.fillWidth: true
-                currentIndex: swipeView.currentIndex
-                onCurrentIndexChanged: swipeView.currentIndex = currentIndex
-                TabButton { text: "Machines" }
-                TabButton { text: "Sessions" }
-            }
-
-            SwipeView {
-                id: swipeView
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-                currentIndex: tabs.currentIndex
-                
-                ColumnLayout {
-                    // anchors.fill: parent
-                    spacing: 8
-                    width: content.width
-
-                    DatabaseCard {
-                        implicitWidth: content.width
-                        dbPath: Backend.currentDatabasePath("gymapp")
-                        dbSeeded: Backend.hasSeeds("gymapp")
-                        machinesResourceUrl: Backend.machinesResourceUrl()
-                        sampleSessionResourceUrl: Backend.sampleSessionResourceUrl()
-                        sqliteInspectText: ""
-                    }
-
-                    MachineListCard {
-                        id: machineListCard
-                        implicitWidth: content.width
-                        // Layout.fillWidth: true
-                        // Layout.minimumHeight: 200
-                        Layout.preferredHeight: 420
-                        listModel: MachineList
-                        loaderModel: LoaderModel {}
-                    }
+                TabBar {
+                    id: tabs
+                    Layout.fillWidth: true
+                    currentIndex: swipeView.currentIndex
+                    onCurrentIndexChanged: swipeView.currentIndex = currentIndex
+                    TabButton { text: "Machines"; font.pixelSize: window.defaultFontSize }
+                    TabButton { text: "Sessions"; font.pixelSize: window.defaultFontSize }
                 }
 
-                SessionView { 
-                    // Layout.fillWidth: true
-                    // Layout.fillHeight: true
+                SwipeView {
+                    id: swipeView
+                    Layout.fillWidth: true
+                    Layout.fillHeight: true
+                    currentIndex: tabs.currentIndex
+
+                    Item {
+                        MachineListCard {
+                            id: machineListCard
+                            anchors.centerIn: parent
+                            listModel: MachineList
+                            loaderModel: LoaderModel {}
+                        }
+                    }
+
+                    // Sessions page
+                    Item {
+                        SessionView {
+                            anchors.fill: parent
+                            anchors.margins: 12
+                        }
+                    }
                 }
             }
         }

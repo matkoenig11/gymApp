@@ -5,51 +5,35 @@
                 "entries": [
                     {
                         "codegenSuccessfull": false,
-                        "column": 19,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
-                        "line": 18
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 22,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on enabled.",
-                        "functionName": "enabled",
-                        "line": 28
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 29
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 40
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 19,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
-                        "functionName": "wrapMode",
-                        "line": 50
+                        "column": 33,
+                        "durationMicroseconds": 778,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onSelectedSessionIdChanged",
+                        "line": 10
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 206,
+                        "column": 16,
+                        "durationMicroseconds": 212,
                         "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 60
+                        "functionName": "width",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 15,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "flow",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 152,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 29
                     },
                     {
                         "codegenSuccessfull": false,
@@ -57,19 +41,51 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 64
+                        "line": 32
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
                         "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
-                        "functionName": "wrapMode",
-                        "line": 66
+                        "errorMessage": "Cannot resolve property type  for binding on text.",
+                        "functionName": "text",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 48
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 28,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on enabled.",
+                        "functionName": "enabled",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 62
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
@@ -77,19 +93,11 @@
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 115,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 78
-                    },
-                    {
-                        "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 87
+                        "line": 85
                     },
                     {
                         "codegenSuccessfull": false,
@@ -97,7 +105,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on model.",
                         "functionName": "model",
-                        "line": 95
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 74,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 114
                     },
                     {
                         "codegenSuccessfull": false,
@@ -105,95 +121,127 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 112
+                        "line": 122
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 132,
+                        "errorMessage": "",
+                        "functionName": "implicitHeight",
+                        "line": 140
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 49,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "model",
-                        "line": 131
+                        "line": 143
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 150,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onModelChanged",
-                        "line": 180
+                        "line": 172
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 144,
+                        "durationMicroseconds": 136,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onCountChanged",
-                        "line": 183
+                        "line": 175
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 145
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 135,
-                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
-                        "functionName": "onCompleted",
-                        "line": 141
+                        "column": 25,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "exerciseId",
+                        "line": 146
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 21,
-                        "durationMicroseconds": 22,
-                        "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
-                        "functionName": "target",
+                        "column": 26,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "machineName",
                         "line": 147
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 13,
-                        "durationMicroseconds": 124,
-                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
-                        "functionName": "onCountChanged",
+                        "column": 26,
+                        "durationMicroseconds": 9,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "muscleGroup",
                         "line": 148
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 42,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 158
+                        "codegenSuccessfull": false,
+                        "column": 22,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "comment",
+                        "line": 149
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
+                        "column": 24,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "effortRir",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot access value for name model",
+                        "functionName": "sets",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 24,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "listIndex",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 32,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onCompleted",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
+                        "functionName": "target",
                         "line": 160
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
-                        "line": 166
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 31,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
-                        "functionName": "wrapMode",
-                        "line": 168
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 30,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on visible.",
-                        "functionName": "visible",
-                        "line": 169
+                        "column": 13,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onCountChanged",
+                        "line": 161
                     },
                     {
                         "codegenSuccessfull": false,
@@ -201,7 +249,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 174
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 185
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on text.",
+                        "functionName": "text",
+                        "line": 189
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 25,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
+                        "functionName": "target",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 17,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot retrieve a non-object type by ID: noteArea",
+                        "functionName": "onSessionChanged",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 205
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 211
                     },
                     {
                         "codegenSuccessfull": false,
@@ -209,15 +305,15 @@
                         "durationMicroseconds": 19,
                         "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
                         "functionName": "target",
-                        "line": 189
+                        "line": 217
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 857,
+                        "durationMicroseconds": 957,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onExercisesChanged",
-                        "line": 190
+                        "line": 218
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml"

@@ -30,8 +30,8 @@ void SessionEditorModelInvokeTest::invoke_methods_behave_like_qml() {
     QVERIFY(execSql("PRAGMA foreign_keys = ON"));
     QVERIFY(execSql("CREATE TABLE sessions (id INTEGER PRIMARY KEY, started_at TEXT, ended_at TEXT, note TEXT)"));
     QVERIFY(execSql("CREATE TABLE machines (id INTEGER PRIMARY KEY, name TEXT, muscle_group TEXT)"));
-    QVERIFY(execSql("CREATE TABLE exercises (id INTEGER PRIMARY KEY, session_id INTEGER NOT NULL, machine_id INTEGER, machine_name_snapshot TEXT, order_index INTEGER NOT NULL DEFAULT 0, comment TEXT, FOREIGN KEY(session_id) REFERENCES sessions(id) ON DELETE CASCADE)"));
-    QVERIFY(execSql("CREATE TABLE exercise_sets (id INTEGER PRIMARY KEY, exercise_id INTEGER NOT NULL, set_number INTEGER NOT NULL, reps INTEGER NOT NULL, weight_lbs REAL, rpe REAL, is_warmup INTEGER NOT NULL DEFAULT 0, UNIQUE(exercise_id, set_number), FOREIGN KEY(exercise_id) REFERENCES exercises(id) ON DELETE CASCADE)"));
+    QVERIFY(execSql("CREATE TABLE exercises (id INTEGER PRIMARY KEY, session_id INTEGER NOT NULL, machine_id INTEGER, machine_name_snapshot TEXT, effort_rir INTEGER, order_index INTEGER NOT NULL DEFAULT 0, comment TEXT, FOREIGN KEY(session_id) REFERENCES sessions(id) ON DELETE CASCADE)"));
+    QVERIFY(execSql("CREATE TABLE exercise_sets (id INTEGER PRIMARY KEY, exercise_id INTEGER NOT NULL, set_number INTEGER NOT NULL, reps INTEGER NOT NULL, weight_lbs REAL, UNIQUE(exercise_id, set_number), FOREIGN KEY(exercise_id) REFERENCES exercises(id) ON DELETE CASCADE)"));
     QVERIFY(execSql("INSERT INTO machines (id, name, muscle_group) VALUES (1, 'Bench Press', 'Chest'), (2, 'Row', 'Back')"));
 
     SessionRepository sessionRepo(db);
@@ -52,7 +52,8 @@ void SessionEditorModelInvokeTest::invoke_methods_behave_like_qml() {
         Q_RETURN_ARG(int, exerciseId),
         Q_ARG(QVariant, QVariant(1)),          // machineId
         Q_ARG(QVariant, QVariant()),           // customName
-        Q_ARG(QVariant, QVariant("Warmup"))    // comment
+        Q_ARG(QVariant, QVariant("Warmup")),   // comment
+        Q_ARG(QVariant, QVariant(2))           // effortRir
     );
     QVERIFY(invokeOk);
     QVERIFY(exerciseId > 0);
@@ -65,9 +66,7 @@ void SessionEditorModelInvokeTest::invoke_methods_behave_like_qml() {
         Q_RETURN_ARG(int, setId),
         Q_ARG(int, exerciseId),
         Q_ARG(int, 10),          // reps
-        Q_ARG(double, 95.0),     // weight
-        Q_ARG(double, 8.0),      // rpe
-        Q_ARG(bool, true));      // warmup
+        Q_ARG(double, 95.0));    // weight
     QVERIFY(invokeOk);
     QVERIFY(setId > 0);
 
@@ -79,7 +78,8 @@ void SessionEditorModelInvokeTest::invoke_methods_behave_like_qml() {
         Q_ARG(int, exerciseId),
         Q_ARG(QString, QString("Updated note")),
         Q_ARG(int, 2),
-        Q_ARG(QString, QString()));
+        Q_ARG(QString, QString()),
+        Q_ARG(QVariant, QVariant(1)));
     QVERIFY(invokeOk);
     QVERIFY(updateOk);
 

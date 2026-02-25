@@ -9,6 +9,8 @@ C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/qmake_GymApp.q
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/GymApp_raw_qml_0.qrc
 --resource
 C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/data.qrc
+--resource
+C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/rcc/controls.qrc
 C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Main.qml
 C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml
 C:/Z_Programming_Backup/Programming/projects/gymApp/qml/DatabaseCard.qml

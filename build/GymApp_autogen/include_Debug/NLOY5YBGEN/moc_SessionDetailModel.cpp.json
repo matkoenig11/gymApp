@@ -12,7 +12,7 @@
                 }
             ],
             "className": "SessionDetailModel",
-            "lineNumber": 18,
+            "lineNumber": 20,
             "methods": [
                 {
                     "access": "public",

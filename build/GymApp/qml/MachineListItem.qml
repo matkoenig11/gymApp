@@ -8,6 +8,8 @@ Item {
     implicitWidth: 200
     implicitHeight: column.implicitHeight + 12
 
+    signal clicked(int id)
+    property int machineId: -1
     property string name: "undefined"
     property string muscleGroup
     property int weightMin
@@ -18,6 +20,11 @@ Item {
         color: "#f1f5f9"
         border.color: "#e2e8f0"
         border.width: 1
+        MouseArea {
+            anchors.fill: parent
+            onClicked: root.clicked(root.machineId)
+            hoverEnabled: true
+        }
 
         ColumnLayout {
             id: column

@@ -19,6 +19,9 @@
     <ClCompile Include="C:\Z_Programming_Backup\Programming\projects\gymApp\core\SetRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Z_Programming_Backup\Programming\projects\gymApp\core\Clogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Z_Programming_Backup\Programming\projects\gymApp\model\MachineListModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

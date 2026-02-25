@@ -162,37 +162,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\qmake_GymApp.qrc">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\GymApp\qmldir">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\GymApp_raw_qml_0.qrc">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\Main.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\HeaderBar.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\DatabaseCard.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\MachineListCard.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\MachineListItem.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionView.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionListPage.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SessionEditorPane.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\ExerciseCardEditor.qml">
-    </None>
-    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qml\SetRowEditor.qml">
-    </None>
     <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\data.qrc">
     </None>
     <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\data\machines.json">
     </None>
     <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\data\gym_21_1_2026.json">
+    </None>
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\build\.qt\rcc\controls.qrc">
+    </None>
+    <None Include="C:\Z_Programming_Backup\Programming\projects\gymApp\qtquickcontrols2.conf">
     </None>
   </ItemGroup>
   <ItemGroup />

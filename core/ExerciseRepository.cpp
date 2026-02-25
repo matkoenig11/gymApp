@@ -49,12 +49,13 @@ int ExerciseRepository::addExercise(int sessionId,
                                     std::optional<int> machineId,
                                     const QString &machineNameSnapshot,
                                     const QString &comment,
+                                    std::optional<int> effortRir,
                                     int orderIndex) {
     if (!isReady()) {
         return 0;
     }
 
-    const int computedOrder = orderIndex < 0 ? nextOrderIndex(sessionId - 1) : orderIndex;
+    const int computedOrder = orderIndex < 0 ? nextOrderIndex(sessionId) : orderIndex;
 
     if (!machineId.has_value() && machineNameSnapshot.isEmpty()) {
         qWarning() << "addExercise: either machineId or machineNameSnapshot must be provided";
@@ -63,8 +64,8 @@ int ExerciseRepository::addExercise(int sessionId,
 
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "INSERT INTO exercises (id, session_id, machine_id, machine_name_snapshot, order_index, comment) "
-        "VALUES (?, ?, ?, ?, ?, ?)"));
+        "INSERT INTO exercises (id, session_id, machine_id, machine_name_snapshot, effort_rir, order_index, comment) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?)"));
 
     int nextId = nextExerciseId();
     q.addBindValue(nextId);
@@ -75,6 +76,11 @@ int ExerciseRepository::addExercise(int sessionId,
         q.addBindValue(QVariant(QVariant::Int));  // NULL
     }
     q.addBindValue(machineNameSnapshot);
+    if (effortRir.has_value()) {
+        q.addBindValue(*effortRir);
+    } else {
+        q.addBindValue(QVariant(QVariant::Int));  // NULL
+    }
     q.addBindValue(computedOrder);
     q.addBindValue(comment);
 
@@ -100,19 +106,25 @@ int ExerciseRepository::addExercise(int sessionId,
 bool ExerciseRepository::updateExercise(int exerciseId,
                                         std::optional<int> machineId,
                                         const QString &machineNameSnapshot,
-                                        const QString &comment) {
+                                        const QString &comment,
+                                        std::optional<int> effortRir) {
     if (!isReady()) {
         return false;
     }
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "UPDATE exercises SET machine_id = ?, machine_name_snapshot = ?, comment = ? WHERE id = ?"));
+        "UPDATE exercises SET machine_id = ?, machine_name_snapshot = ?, effort_rir = ?, comment = ? WHERE id = ?"));
     if (machineId.has_value()) {
         q.addBindValue(*machineId);
     } else {
         q.addBindValue(QVariant(QVariant::Int));
     }
     q.addBindValue(machineNameSnapshot);
+    if (effortRir.has_value()) {
+        q.addBindValue(*effortRir);
+    } else {
+        q.addBindValue(QVariant(QVariant::Int));
+    }
     q.addBindValue(comment);
     q.addBindValue(exerciseId);
     if (!q.exec()) {
@@ -176,10 +188,11 @@ ExerciseRow ExerciseRepository::hydrateRow(const QSqlQuery &row) const {
     ex.sessionId = row.value(1).toInt();
     ex.machineId = row.isNull(2) ? std::optional<int>() : std::optional<int>(row.value(2).toInt());
     ex.machineNameSnapshot = row.value(3).toString();
-    ex.orderIndex = row.value(4).toInt();
-    ex.comment = row.value(5).toString();
-    ex.machineNameResolved = row.value(6).toString();
-    ex.muscleGroup = row.value(7).toString();
+    ex.effortRir = row.isNull(4) ? std::optional<int>() : std::optional<int>(row.value(4).toInt());
+    ex.orderIndex = row.value(5).toInt();
+    ex.comment = row.value(6).toString();
+    ex.machineNameResolved = row.value(7).toString();
+    ex.muscleGroup = row.value(8).toString();
     return ex;
 }
 
@@ -191,7 +204,7 @@ QVector<ExerciseRow> ExerciseRepository::fetchExercises(int sessionId) const {
 
     QSqlQuery q(db_);
     q.prepare(QStringLiteral(
-        "SELECT e.id, e.session_id, e.machine_id, e.machine_name_snapshot, e.order_index, e.comment, "
+        "SELECT e.id, e.session_id, e.machine_id, e.machine_name_snapshot, e.effort_rir, e.order_index, e.comment, "
         "COALESCE(e.machine_name_snapshot, m.name, '') AS resolved_name, "
         "COALESCE(m.muscle_group, '') "
         "FROM exercises e "
