@@ -75,6 +75,55 @@ namespace _qt_qml_GymApp_qml_SetRowEditor_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_GymApp_qml_SettingsView_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_Theme_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_LabeledSpinBox_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_ListHeader_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_ActionButtonGroup_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_SetInputRow_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_GymApp_qml_CollapsibleCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -99,6 +148,13 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SessionEditorPane.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SessionEditorPane_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/ExerciseCardEditor.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_ExerciseCardEditor_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SetRowEditor.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SetRowEditor_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SettingsView.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SettingsView_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/Theme.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_Theme_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/LabeledSpinBox.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_LabeledSpinBox_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/ListHeader.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_ListHeader_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/ActionButtonGroup.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_ActionButtonGroup_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/SetInputRow.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_SetInputRow_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/GymApp/qml/CollapsibleCard.qml"), &QmlCacheGeneratedCode::_qt_qml_GymApp_qml_CollapsibleCard_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

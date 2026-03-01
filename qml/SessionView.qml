@@ -30,28 +30,19 @@ Item {
         anchors.margins: contentMargin
         spacing: 12
 
-        Flow {
+        RowLayout {
             Layout.fillWidth: true
             spacing: 8
-            Label {
-                text: "Sessions"
-                font.pixelSize: 14
-                font.bold: true
-            }
-            Label {
-                padding: 6
-                text: SessionList ? SessionList.count + " items" : "0"
-                font.pixelSize: 10
-                color: "#334155"
-            }
-            Button {
-                text: "Refresh"
-                onClicked: {
+            ListHeader {
+                title: "Sessions"
+                itemCount: SessionList ? SessionList.count : 0
+                onRefresh: {
                     SessionList && SessionList.refresh()
-                    if (selectedSessionId >= 0) {
-                        SessionDetail.loadSession(selectedSessionId)
+                    if (root.selectedSessionId >= 0) {
+                        SessionDetail.loadSession(root.selectedSessionId)
                     }
                 }
+                Layout.fillWidth: true
             }
             Button {
                 text: listOpen ? "Hide List" : "Show List"
@@ -59,21 +50,21 @@ Item {
             }
             Button {
                 text: "Edit Selected"
-                enabled: selectedSessionId >= 0
+                enabled: root.selectedSessionId >= 0
                 onClicked: {
-                    if (selectedSessionId >= 0) {
-                        SessionEditor.loadSession(selectedSessionId)
+                    if (root.selectedSessionId >= 0) {
+                        SessionEditor.loadSession(root.selectedSessionId)
                         rightTabIndex = 1
                     }
                 }
             }
             Button {
                 text: "View Selected"
-                enabled: selectedSessionId >= 0
+                enabled: root.selectedSessionId >= 0
                 onClicked: {
                     rightTabIndex = 0
-                    if (selectedSessionId >= 0) {
-                        SessionDetail.loadSession(selectedSessionId)
+                    if (root.selectedSessionId >= 0) {
+                        SessionDetail.loadSession(root.selectedSessionId)
                     }
                 }
             }

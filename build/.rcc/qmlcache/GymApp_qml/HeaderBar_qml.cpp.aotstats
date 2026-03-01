@@ -5,59 +5,83 @@
                 "entries": [
                     {
                         "codegenSuccessfull": true,
-                        "column": 23,
-                        "durationMicroseconds": 159,
+                        "column": 25,
+                        "durationMicroseconds": 3637,
                         "errorMessage": "",
-                        "functionName": "fill",
+                        "functionName": "theme",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Cannot access value for name theme",
+                        "functionName": "color",
                         "line": 22
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 22,
-                        "durationMicroseconds": 82,
+                        "column": 23,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
-                        "functionName": "visible",
+                        "functionName": "fill",
                         "line": 25
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 145,
+                        "column": 22,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
-                        "functionName": "onClicked",
-                        "line": 27
+                        "functionName": "visible",
+                        "line": 28
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 77,
+                        "durationMicroseconds": 104,
                         "errorMessage": "",
                         "functionName": "onClicked",
-                        "line": 31
+                        "line": 30
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 117,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 34
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 69,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 45
+                        "line": 48
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 80,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 49
+                        "line": 52
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 26,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "onTriggered",
-                        "line": 53
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 61
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/HeaderBar.qml"

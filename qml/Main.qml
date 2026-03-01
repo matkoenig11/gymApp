@@ -10,6 +10,7 @@ ApplicationWindow {
     id: window
     property int defaultFontSize: 18
     property int baseMargin: Math.max(width * 0.04, 12)
+    property var theme: Theme
 
     width: 480
     height: 860
@@ -24,6 +25,7 @@ ApplicationWindow {
         onImportSqlite: sqliteDialog.open()
         onImportJson: console.log("Import JSON action not wired yet")
         onExportJson: console.log("Export JSON action not wired yet")
+        onOpenSettings: navStack.push(settingsComponent)
     }
 
     StackView {
@@ -83,5 +85,10 @@ ApplicationWindow {
                 SessionDetail.loadSession(-1)
             }
         }
+    }
+
+    Component {
+        id: settingsComponent
+        SettingsView { }
     }
 }

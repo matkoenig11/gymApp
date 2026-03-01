@@ -37,6 +37,8 @@ qt_add_executable(GymApp
 
 set_property(TARGET GymApp PROPERTY OUTPUT_NAME "gymapp_bin")
 
+qt_policy(SET QTP0004 NEW)
+
 qt_add_qml_module(GymApp
     URI GymApp
     VERSION 1.0
@@ -53,6 +55,13 @@ qt_add_qml_module(GymApp
         qml/SessionEditorPane.qml
         qml/ExerciseCardEditor.qml
         qml/SetRowEditor.qml
+        qml/SettingsView.qml
+        qml/Theme.qml
+        qml/LabeledSpinBox.qml
+        qml/ListHeader.qml
+        qml/ActionButtonGroup.qml
+        qml/SetInputRow.qml
+        qml/CollapsibleCard.qml
     SOURCES
         core/Backend.h
         core/MachineRepository.h

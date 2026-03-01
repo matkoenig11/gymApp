@@ -4,84 +4,60 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 211,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 16
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 89,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 21
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 291,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "itemCount",
+                        "line": 12
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 23,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
-                        "line": 24
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 31
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 31,
-                        "durationMicroseconds": 53,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 32
+                        "column": 20,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onRefresh",
+                        "line": 13
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 74,
+                        "durationMicroseconds": 54,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "model",
-                        "line": 39
+                        "line": 19
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 197,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 42
+                        "line": 22
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 142,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 43
+                        "line": 23
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
-                        "line": 44
+                        "line": 24
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 48,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 50
+                        "line": 30
                     },
                     {
                         "codegenSuccessfull": false,
@@ -89,7 +65,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 54
+                        "line": 34
                     },
                     {
                         "codegenSuccessfull": false,
@@ -97,7 +73,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 60
+                        "line": 40
                     },
                     {
                         "codegenSuccessfull": false,
@@ -105,7 +81,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 61
+                        "line": 41
                     },
                     {
                         "codegenSuccessfull": false,
@@ -113,7 +89,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
                         "functionName": "wrapMode",
-                        "line": 64
+                        "line": 44
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionListPage.qml"

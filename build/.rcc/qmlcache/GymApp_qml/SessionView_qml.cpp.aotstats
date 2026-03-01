@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 477,
+                        "durationMicroseconds": 499,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "ensureEditorSessionLoaded",
                         "line": 15
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 178,
+                        "durationMicroseconds": 194,
                         "errorMessage": "",
                         "functionName": "onRightTabIndexChanged",
                         "line": 21
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 29
@@ -30,10 +30,26 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 34,
                         "errorMessage": "Cannot access value for name contentMargin",
                         "functionName": "margins",
                         "line": 30
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 158,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "itemCount",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 441,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onRefresh",
+                        "line": 39
                     },
                     {
                         "codegenSuccessfull": false,
@@ -41,7 +57,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 43
+                        "line": 48
                     },
                     {
                         "codegenSuccessfull": false,
@@ -53,11 +69,11 @@
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 23,
+                        "column": 26,
                         "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on text.",
-                        "functionName": "text",
-                        "line": 57
+                        "errorMessage": "Cannot resolve property type  for binding on enabled.",
+                        "functionName": "enabled",
+                        "line": 53
                     },
                     {
                         "codegenSuccessfull": false,
@@ -65,7 +81,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 58
+                        "line": 54
                     },
                     {
                         "codegenSuccessfull": false,
@@ -73,39 +89,23 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on enabled.",
                         "functionName": "enabled",
-                        "line": 62
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
                         "line": 63
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 26,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on enabled.",
-                        "functionName": "enabled",
-                        "line": 72
-                    },
-                    {
-                        "codegenSuccessfull": false,
                         "column": 28,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 73
+                        "line": 64
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 27,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name rightTabIndex",
                         "functionName": "currentIndex",
-                        "line": 88
+                        "line": 79
                     },
                     {
                         "codegenSuccessfull": false,
@@ -113,15 +113,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on contentWidth.",
                         "functionName": "contentWidth",
-                        "line": 93
+                        "line": 84
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 161,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 95
+                        "line": 86
                     },
                     {
                         "codegenSuccessfull": false,
@@ -129,7 +129,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 99
+                        "line": 90
                     },
                     {
                         "codegenSuccessfull": false,
@@ -137,7 +137,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 106
+                        "line": 97
                     },
                     {
                         "codegenSuccessfull": false,
@@ -145,7 +145,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 107
+                        "line": 98
                     },
                     {
                         "codegenSuccessfull": false,
@@ -153,55 +153,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
                         "functionName": "wrapMode",
-                        "line": 108
+                        "line": 99
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 59,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "model",
-                        "line": 116
+                        "line": 107
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 41,
-                        "durationMicroseconds": 58,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "boundsBehavior",
-                        "line": 117
+                        "line": 108
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 159,
+                        "durationMicroseconds": 155,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 120
+                        "line": 111
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 98,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 121
+                        "line": 112
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 19,
+                        "durationMicroseconds": 21,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
-                        "line": 122
+                        "line": 113
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 128
+                        "line": 119
                     },
                     {
                         "codegenSuccessfull": false,
@@ -209,7 +209,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 132
+                        "line": 123
                     },
                     {
                         "codegenSuccessfull": false,
@@ -217,7 +217,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 138
+                        "line": 129
                     },
                     {
                         "codegenSuccessfull": false,
@@ -225,7 +225,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 139
+                        "line": 130
                     },
                     {
                         "codegenSuccessfull": false,
@@ -233,7 +233,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 144
+                        "line": 135
                     },
                     {
                         "codegenSuccessfull": false,
@@ -241,7 +241,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 145
+                        "line": 136
                     },
                     {
                         "codegenSuccessfull": false,
@@ -249,15 +249,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on wrapMode.",
                         "functionName": "wrapMode",
-                        "line": 148
+                        "line": 139
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 44,
-                        "durationMicroseconds": 142,
+                        "durationMicroseconds": 205,
                         "errorMessage": "Cannot access value for name sets",
                         "functionName": "model",
-                        "line": 151
+                        "line": 142
                     },
                     {
                         "codegenSuccessfull": false,
@@ -265,7 +265,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 153
+                        "line": 144
                     },
                     {
                         "codegenSuccessfull": false,
@@ -273,39 +273,39 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on contentWidth.",
                         "functionName": "contentWidth",
-                        "line": 167
+                        "line": 158
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 175,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 169
+                        "line": 160
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 40,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
                         "functionName": "selectedSessionId",
-                        "line": 173
+                        "line": 164
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "left",
-                        "line": 170
+                        "line": 161
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 71,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 171
+                        "line": 162
                     },
                     {
                         "codegenSuccessfull": false,
@@ -313,7 +313,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 190
+                        "line": 181
                     },
                     {
                         "codegenSuccessfull": false,
@@ -321,7 +321,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
-                        "line": 184
+                        "line": 175
                     },
                     {
                         "codegenSuccessfull": false,
@@ -329,55 +329,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on bottom.",
                         "functionName": "bottom",
-                        "line": 185
+                        "line": 176
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 25,
+                        "durationMicroseconds": 28,
                         "errorMessage": "Cannot access value for name listOpen",
                         "functionName": "width",
-                        "line": 203
+                        "line": 194
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "top",
-                        "line": 204
+                        "line": 195
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "bottom",
-                        "line": 205
+                        "line": 196
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 59,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "left",
-                        "line": 206
+                        "line": 197
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 75,
-                        "durationMicroseconds": 52,
+                        "durationMicroseconds": 58,
                         "errorMessage": "",
                         "functionName": "type",
-                        "line": 209
+                        "line": 200
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 36,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 212
+                        "line": 203
                     },
                     {
                         "codegenSuccessfull": false,
@@ -385,55 +385,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 226
+                        "line": 217
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 50,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "model",
-                        "line": 234
+                        "line": 225
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 33,
-                        "durationMicroseconds": 55,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "boundsBehavior",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 229
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "color",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 39,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "fill",
                         "line": 235
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 145,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 238
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 39,
-                        "errorMessage": "Cannot access value for name index",
-                        "functionName": "color",
-                        "line": 240
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 40,
-                        "errorMessage": "",
-                        "functionName": "fill",
-                        "line": 244
-                    },
-                    {
                         "codegenSuccessfull": false,
                         "column": 35,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 248
+                        "line": 239
                     },
                     {
                         "codegenSuccessfull": false,
@@ -441,7 +441,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on elide.",
                         "functionName": "elide",
-                        "line": 252
+                        "line": 243
                     },
                     {
                         "codegenSuccessfull": false,
@@ -449,7 +449,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 255
+                        "line": 246
                     },
                     {
                         "codegenSuccessfull": false,
@@ -457,55 +457,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on elide.",
                         "functionName": "elide",
-                        "line": 258
+                        "line": 249
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 27,
                         "errorMessage": "Cannot access value for name sessionList",
                         "functionName": "onClicked",
-                        "line": 263
+                        "line": 254
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 43,
+                        "durationMicroseconds": 44,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 262
+                        "line": 253
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 18,
-                        "durationMicroseconds": 15,
+                        "durationMicroseconds": 16,
                         "errorMessage": "Cannot access value for name listOpen",
                         "functionName": "visible",
-                        "line": 279
+                        "line": 270
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 18,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot access value for name listOpen",
                         "functionName": "enabled",
-                        "line": 280
+                        "line": 271
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 20,
-                        "durationMicroseconds": 17,
+                        "durationMicroseconds": 14,
                         "errorMessage": "Cannot find name listOpen",
                         "functionName": "onClicked",
-                        "line": 282
+                        "line": 273
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 37,
+                        "durationMicroseconds": 39,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 278
+                        "line": 269
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionView.qml"

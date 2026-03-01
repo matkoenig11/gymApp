@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 29,
-                        "durationMicroseconds": 173,
+                        "durationMicroseconds": 185,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "listModel",
                         "line": 8
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 139,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
                         "line": 16
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 94,
                         "errorMessage": "",
                         "functionName": "implicitWidth",
                         "line": 17
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 52,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 21
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 61,
+                        "durationMicroseconds": 63,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 32
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 66,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 46
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 210,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 81
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 19,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "machineId",
                         "line": 82
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 10,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "name",
                         "line": 83
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "muscleGroup",
                         "line": 84
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "weightMin",
                         "line": 85
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "weightMax",
                         "line": 86
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 23,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 9,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "note",
                         "line": 87
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 28,
-                        "durationMicroseconds": 22,
+                        "durationMicroseconds": 30,
                         "errorMessage": "Cannot access value for name editorTitle",
                         "functionName": "onClicked",
                         "line": 88
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 161,
+                        "durationMicroseconds": 172,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 102
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 19,
+                        "durationMicroseconds": 23,
                         "errorMessage": "Cannot access value for name listModel",
                         "functionName": "height",
                         "line": 103
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 16,
+                        "durationMicroseconds": 22,
                         "errorMessage": "Cannot access value for name listModel",
                         "functionName": "visible",
                         "line": 108
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 42,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 105
@@ -182,7 +182,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 51,
+                        "durationMicroseconds": 64,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 112
@@ -206,7 +206,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 54,
+                        "durationMicroseconds": 78,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 124
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 104,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "visible",
                         "line": 159
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 41,
+                        "durationMicroseconds": 49,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 174
@@ -270,7 +270,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 56,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 193

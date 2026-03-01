@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 33,
-                        "durationMicroseconds": 778,
+                        "durationMicroseconds": 1166,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onSelectedSessionIdChanged",
                         "line": 10
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 212,
+                        "durationMicroseconds": 226,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 23
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 15,
-                        "durationMicroseconds": 65,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "flow",
                         "line": 25
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 152,
+                        "durationMicroseconds": 206,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 29
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 39,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "alignment",
                         "line": 48
@@ -69,35 +69,43 @@
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 22,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on enabled.",
-                        "functionName": "enabled",
-                        "line": 61
+                        "column": 26,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "showPrimary",
+                        "line": 63
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 62
+                        "column": 25,
+                        "durationMicroseconds": 115,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "showDanger",
+                        "line": 64
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 24,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 72
+                        "column": 31,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onPrimaryClicked",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 30,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
+                        "functionName": "onDangerClicked",
+                        "line": 69
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 48,
+                        "durationMicroseconds": 53,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 85
+                        "line": 80
                     },
                     {
                         "codegenSuccessfull": false,
@@ -105,15 +113,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on model.",
                         "functionName": "model",
-                        "line": 98
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 74,
-                        "durationMicroseconds": 62,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 114
+                        "line": 91
                     },
                     {
                         "codegenSuccessfull": false,
@@ -121,127 +121,127 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 122
+                        "line": 116
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 25,
-                        "durationMicroseconds": 132,
+                        "durationMicroseconds": 160,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
-                        "line": 140
+                        "line": 134
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 16,
-                        "durationMicroseconds": 49,
+                        "durationMicroseconds": 61,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "model",
-                        "line": 143
+                        "line": 137
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 150,
+                        "durationMicroseconds": 207,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onModelChanged",
-                        "line": 172
+                        "line": 165
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 181,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onCountChanged",
-                        "line": 175
+                        "line": 168
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 162,
+                        "durationMicroseconds": 237,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 145
+                        "line": 139
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 24,
+                        "durationMicroseconds": 32,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "exerciseId",
-                        "line": 146
+                        "line": 140
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 10,
+                        "durationMicroseconds": 15,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "machineName",
-                        "line": 147
+                        "line": 141
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 26,
-                        "durationMicroseconds": 9,
+                        "durationMicroseconds": 15,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "muscleGroup",
-                        "line": 148
+                        "line": 142
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 22,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 15,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "comment",
-                        "line": 149
+                        "line": 143
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 14,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "effortRir",
-                        "line": 150
+                        "line": 144
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 19,
-                        "durationMicroseconds": 8,
+                        "durationMicroseconds": 14,
                         "errorMessage": "Cannot access value for name model",
                         "functionName": "sets",
-                        "line": 151
+                        "line": 145
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 10,
+                        "durationMicroseconds": 14,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "listIndex",
-                        "line": 152
+                        "line": 146
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
-                        "durationMicroseconds": 156,
+                        "durationMicroseconds": 220,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onCompleted",
-                        "line": 154
+                        "line": 148
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 21,
+                        "durationMicroseconds": 29,
                         "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
                         "functionName": "target",
-                        "line": 160
+                        "line": 153
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 13,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 203,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onCountChanged",
-                        "line": 161
+                        "line": 154
                     },
                     {
                         "codegenSuccessfull": false,
@@ -249,15 +249,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on visible.",
                         "functionName": "visible",
-                        "line": 166
+                        "line": 159
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 57,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 185
+                        "line": 179
                     },
                     {
                         "codegenSuccessfull": false,
@@ -265,23 +265,23 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 189
+                        "line": 183
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 25,
-                        "durationMicroseconds": 20,
+                        "durationMicroseconds": 30,
                         "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
                         "functionName": "target",
-                        "line": 195
+                        "line": 188
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 18,
+                        "durationMicroseconds": 24,
                         "errorMessage": "Cannot retrieve a non-object type by ID: noteArea",
                         "functionName": "onSessionChanged",
-                        "line": 196
+                        "line": 189
                     },
                     {
                         "codegenSuccessfull": false,
@@ -289,31 +289,31 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 205
+                        "line": 198
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 62,
+                        "durationMicroseconds": 103,
                         "errorMessage": "",
                         "functionName": "alignment",
-                        "line": 211
+                        "line": 204
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 19,
+                        "durationMicroseconds": 29,
                         "errorMessage": "cannot convert from gym::SessionEditorModel to QObject",
                         "functionName": "target",
-                        "line": 217
+                        "line": 210
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 9,
-                        "durationMicroseconds": 957,
+                        "durationMicroseconds": 1368,
                         "errorMessage": "Cannot generate efficient code for non-QObject singleton type",
                         "functionName": "onExercisesChanged",
-                        "line": 218
+                        "line": 211
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml"

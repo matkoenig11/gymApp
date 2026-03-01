@@ -22,6 +22,20 @@ set(src_and_dest_list
     "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/ExerciseCardEditor.qml"
     "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml"
     "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/SetRowEditor.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SettingsView.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/SettingsView.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Theme.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/Theme.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/LabeledSpinBox.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/LabeledSpinBox.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ListHeader.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/ListHeader.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ActionButtonGroup.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/ActionButtonGroup.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetInputRow.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/SetInputRow.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/CollapsibleCard.qml"
+    "C:/Z_Programming_Backup/Programming/projects/gymApp/build/qt/qml/GymApp/qml/CollapsibleCard.qml"
 
 )
 set(timestamp_file "C:/Z_Programming_Backup/Programming/projects/gymApp/build/.qt/GymApp_qml.txt")

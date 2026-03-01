@@ -6,90 +6,74 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 30,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 96,
                         "errorMessage": "Cannot load property exerciseId from (component in C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml)::setData with type QVariant.",
                         "functionName": "exerciseId",
-                        "line": 11
+                        "line": 9
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 199,
                         "errorMessage": "",
                         "functionName": "implicitHeight",
-                        "line": 12
+                        "line": 10
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 57,
+                        "durationMicroseconds": 54,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 20
+                        "line": 18
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 23,
+                        "column": 19,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 23
+                        "line": 22
                     },
                     {
                         "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 23,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on reps.",
+                        "functionName": "reps",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 25,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on weight.",
+                        "functionName": "weight",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 71,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 26
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot access value for name setData",
+                        "functionName": "onPrimaryClicked",
+                        "line": 40
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on value.",
-                        "functionName": "value",
-                        "line": 39
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 75,
-                        "durationMicroseconds": 61,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 48
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 28,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on value.",
-                        "functionName": "value",
-                        "line": 54
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 74,
-                        "durationMicroseconds": 63,
-                        "errorMessage": "",
-                        "functionName": "alignment",
-                        "line": 64
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 72
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 82
+                        "column": 34,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name setData",
+                        "functionName": "onDangerClicked",
+                        "line": 44
                     }
                 ],
                 "filepath": "C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml"

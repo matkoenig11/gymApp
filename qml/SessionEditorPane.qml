@@ -56,27 +56,22 @@ ColumnLayout {
                 }
             }
         }
-        Button {
-            text: "End Session"
-            enabled: SessionEditor.sessionId > 0
-            onClicked: {
+
+        ActionButtonGroup {
+            primaryButtonText: "End Session"
+            dangerButtonText: "Delete"
+            showPrimary: SessionEditor.sessionId > 0
+            showDanger: SessionEditor.sessionId > 0
+            onPrimaryClicked: {
                 SessionEditor.endSessionNow()
                 SessionList.refresh()
             }
-        }
-        Button {
-            text: "Delete"
-            highlighted: true
-            palette.button: "#fee2e2"
-            palette.buttonText: "#7f1d1d"
-            onClicked: {
+            onDangerClicked: {
                 SessionEditor.deleteSession()
                 SessionList.refresh()
             }
         }
     }
-
-    
 
     GroupBox {
         title: "Add Exercise"
@@ -88,10 +83,8 @@ ColumnLayout {
 
             ColumnLayout {
                 id: addExerciseFlow
-                // width: parent ? parent.width : implicitWidth
                 Layout.fillWidth: true
                 spacing: 6
-                // flow: Flow.LeftToRight
 
                 ComboBox {
                     id: machineCombo
@@ -100,33 +93,34 @@ ColumnLayout {
                     valueRole: "id"
                     Layout.preferredWidth: 180
                 }
-                TextField {
-                    id: customName
-                    placeholderText: "Or custom name"
-                    Layout.fillWidth: true
-                }
-                SpinBox {
-                    id: addRir
-                    from: 0; to: 5; stepSize: 1
-                    value: 2
-                    width: 120
-                }
-                Label { text: "RIR"; color: "#475569"; Layout.alignment: Qt.AlignVCenter }
-                TextField {
-                    id: exerciseComment
-                    placeholderText: "Comment (optional)"
-                    Layout.fillWidth: true
-                }
+                // TextField {
+                //     id: customName
+                //     placeholderText: "Or custom name"
+                //     Layout.fillWidth: true
+                // }
+                // LabeledSpinBox {
+                //     id: addRirControl
+                //     label: "RIR"
+                //     from: 0
+                //     to: 5
+                //     value: 2
+                //     Layout.fillWidth: true
+                // }
+                // TextField {
+                //     id: exerciseComment
+                //     placeholderText: "Comment (optional)"
+                //     Layout.fillWidth: true
+                // }
                 Button {
                     text: "Add"
                     onClicked: {
                         const machineId = machineCombo.currentValue || 0
-                        SessionEditor.addExercise(machineId, customName.text, exerciseComment.text, addRir.value)
+                        SessionEditor.addExercise(machineId, "", "", "", 2)
                         SessionList.refresh()
                         SessionDetail.loadSession(SessionEditor.sessionId)
                         exerciseComment.text = ""
                         customName.text = ""
-                        addRir.value = 2
+                        addRirControl.value = 2
                     }
                 }
             }
@@ -154,7 +148,6 @@ ColumnLayout {
         Component.onCompleted: {
             console.log("[SessionEditorPane] ListView completed; count =", SessionEditor.count)
         }
-        // when fcount  changed
 
         Connections {
             target: SessionEditor
@@ -176,6 +169,7 @@ ColumnLayout {
             console.log("[SessionEditorPane] count changed;", SessionEditor.count)
         }
     }
+
     GroupBox {
         title: "Session Note"
         Layout.fillWidth: true
@@ -187,7 +181,6 @@ ColumnLayout {
             TextArea {
                 id: noteArea
                 text: SessionEditor.sessionNote
-                // placeholderText: "How you felt, focus, duration..."
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }

@@ -2,21 +2,24 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Controls.Material
 import QtQuick.Layouts
+import GymApp
 
 ToolBar {
     id: root
     property alias titleText: titleLabel.text
     property bool showBack: false
+    property var theme: Theme
     signal back()
 
     signal importSqlite()
     signal importJson()
     signal exportJson()
+    signal openSettings()
 
     Material.primary: "#000000ff"
     Material.background: "transparent"
     Material.foreground: "#ffffff"
-    background: Rectangle { color: "#00a169ff"; opacity: 1 }
+    background: Rectangle { color: theme.current.primary; opacity: 1 }
 
     RowLayout {
         anchors.fill: parent
@@ -51,6 +54,11 @@ ToolBar {
         Action {
             text: qsTr("Export JSON")
             onTriggered: root.exportJson()
+        }
+        MenuSeparator { }
+        Action {
+            text: qsTr("Settings")
+            onTriggered: root.openSettings()
         }
     }
 }

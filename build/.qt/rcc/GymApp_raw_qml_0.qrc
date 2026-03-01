@@ -10,6 +10,13 @@
     <file alias="qml/SessionEditorPane.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SessionEditorPane.qml</file>
     <file alias="qml/ExerciseCardEditor.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ExerciseCardEditor.qml</file>
     <file alias="qml/SetRowEditor.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetRowEditor.qml</file>
+    <file alias="qml/SettingsView.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SettingsView.qml</file>
+    <file alias="qml/Theme.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/Theme.qml</file>
+    <file alias="qml/LabeledSpinBox.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/LabeledSpinBox.qml</file>
+    <file alias="qml/ListHeader.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ListHeader.qml</file>
+    <file alias="qml/ActionButtonGroup.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/ActionButtonGroup.qml</file>
+    <file alias="qml/SetInputRow.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/SetInputRow.qml</file>
+    <file alias="qml/CollapsibleCard.qml">C:/Z_Programming_Backup/Programming/projects/gymApp/qml/CollapsibleCard.qml</file>
   </qresource>
 </RCC>
 

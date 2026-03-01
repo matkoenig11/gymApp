@@ -7,30 +7,10 @@ ColumnLayout {
     spacing: 8
     Layout.fillWidth: true
 
-    RowLayout {
-        spacing: 8
-        Label {
-            text: "Sessions"
-            font.pixelSize: 16
-            font.bold: true
-            Layout.alignment: Qt.AlignVCenter
-        }
-        Rectangle {
-            radius: 12
-            color: "#e2e8f0"
-            Layout.alignment: Qt.AlignVCenter
-            Label {
-                padding: 6
-                text: SessionList ? SessionList.count + " items" : "0"
-                font.pixelSize: 12
-                color: "#334155"
-            }
-        }
-        Button {
-            text: "Refresh"
-            onClicked: SessionList && SessionList.refresh()
-            Layout.alignment: Qt.AlignVCenter
-        }
+    ListHeader {
+        title: "Sessions"
+        itemCount: SessionList ? SessionList.count : 0
+        onRefresh: SessionList && SessionList.refresh()
     }
 
     ListView {
