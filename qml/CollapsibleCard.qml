@@ -21,13 +21,15 @@ import QtQuick.Layouts
  */
 Rectangle {
     id: card
+    default property alias content: expandedLayout.data
     property string title: "Card"
     property string subtitle: ""
     property string collapsedPreview: ""
     property bool showRemove: false
     property var theme: Theme
     property alias expandedContent: expandedLayout.children
-    property bool expanded: true
+    property bool expanded: false
+    property bool initiallyExpanded: false
 
     signal remove()
 
@@ -54,12 +56,24 @@ Rectangle {
             spacing: 6
             Layout.preferredHeight: headerRow.implicitHeight
 
-            Label {
-                text: expanded ? "[-]" : "[+]"
-                font.pixelSize: 14
-                color: hoverHandler.hovered 
-                       ? (theme && theme.current ? theme.current.textPrimary : "#0f172a")
-                       : (theme && theme.current ? theme.current.textSecondary : "#475569")
+            Rectangle {
+                id: toggleBtn
+                width: 32
+                height: 32
+                radius: 6
+                color: hoverHandler.hovered ? "#e2e8f0" : "#f1f5f9"
+                border.color: "#cbd5e1"
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.margins: 6
+                    Label {
+                        text: expanded ? "\u2212" : "+"
+                        font.pixelSize: 16
+                        font.bold: true
+                        color: (theme && theme.current) ? theme.current.textPrimary : "#0f172a"
+                        Layout.alignment: Qt.AlignCenter
+                    }
+                }
 
                 MouseArea {
                     anchors.fill: parent
@@ -113,5 +127,9 @@ Rectangle {
             Component.onCompleted: { var _ = expandedLayout.implicitHeight }
             Layout.preferredHeight: expandedLayout.implicitHeight
         }
+    }
+
+    Component.onCompleted: {
+        expanded = initiallyExpanded
     }
 }

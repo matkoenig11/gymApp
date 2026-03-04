@@ -19,8 +19,8 @@ Item {
     }
 
     onRightTabIndexChanged: {
-        rightTabs.currentIndex = rightTabIndex
-        if (rightTabIndex === 1) {
+        rightTabs.currentIndex = root.rightTabIndex
+        if (root.rightTabIndex === 1) {
             ensureEditorSessionLoaded()
         }
     }
@@ -45,28 +45,20 @@ Item {
                 Layout.fillWidth: true
             }
             Button {
+                text: root.rightTabIndex === 0 ? "Edit" : "View"
+                enabled: root.selectedSessionId >= 0
+                onClicked: {
+                    if (root.rightTabIndex === 0) {
+                        ensureEditorSessionLoaded()
+                        root.rightTabIndex = 1
+                    } else {
+                        root.rightTabIndex = 0  
+                    }
+                }
+            }
+            Button {
                 text: listOpen ? "Hide List" : "Show List"
                 onClicked: listOpen = !listOpen
-            }
-            Button {
-                text: "Edit Selected"
-                enabled: root.selectedSessionId >= 0
-                onClicked: {
-                    if (root.selectedSessionId >= 0) {
-                        SessionEditor.loadSession(root.selectedSessionId)
-                        rightTabIndex = 1
-                    }
-                }
-            }
-            Button {
-                text: "View Selected"
-                enabled: root.selectedSessionId >= 0
-                onClicked: {
-                    rightTabIndex = 0
-                    if (root.selectedSessionId >= 0) {
-                        SessionDetail.loadSession(root.selectedSessionId)
-                    }
-                }
             }
         }
 
@@ -76,7 +68,7 @@ Item {
             id: rightTabs
             Layout.fillWidth: true
             Layout.fillHeight: true
-            currentIndex: rightTabIndex
+            currentIndex: root.rightTabIndex
 
             // Details view
             ScrollView {
@@ -182,7 +174,7 @@ Item {
             SessionEditor.loadSession(-1)
             root.selectedSessionId = -1
             SessionList.refresh()
-            rightTabIndex = 1
+            root.rightTabIndex = 1
         }
     }
 
@@ -252,11 +244,17 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            sessionList.currentIndex = index
-                            root.selectedSessionId = id
-                            SessionDetail.loadSession(id)
-                            rightTabIndex = 0
+                            selectedSessionId = id
+                            root.rightTabIndex = 0
                             listOpen = false
+                            sessionList.currentIndex = index
+                        }
+                        onDoubleClicked: {
+                            selectedSessionId = id
+                            SessionEditor.loadSession(id)
+                            root.rightTabIndex = 1
+                            listOpen = false
+                            sessionList.currentIndex = index
                         }
                     }
                 }

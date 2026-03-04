@@ -22,3 +22,10 @@
 ## Working notes
 - Follow the plants project CMake style (Qt targets via `qt_add_executable`, resources via `qt_add_resources` or similar).
 - Keep DB access out of QML; expose models/services from C++.
+- Treat QML warnings as errors: new work must run cleanly without runtime QML warnings.
+- When a task is completed, **always compile and run** before calling it done; if you can’t, say so explicitly.
+  - Typical build command (Debug): `cmake --build build --config Debug`
+  - Typical sanity run (desktop): `build/Debug/gymapp_bin.exe`
+  - Targeted tests we rely on: `ctest -C Debug -R "Session(DetailModelTest|EditorModelInvokeTest)"` (extend as needed)
+- Preserve UI state where possible; avoid regressions like scroll jumps or auto-expanding cards unless explicitly requested.
+- **CRITICAL**: Never overwrite or revert the latest user-edited lines/files. If there’s any doubt, ask before touching them. Always prefer minimal diffs that respect the user’s recent changes.

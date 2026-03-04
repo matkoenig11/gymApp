@@ -12,12 +12,15 @@ CollapsibleCard {
     property var effortRir: null
     property var sets: []
     property int listIndex: -1
+    property bool startExpanded: false
+    property var captureScroll: null
     
     title: machineName.length > 0 ? machineName : "Exercise"
     subtitle: muscleGroup
     collapsedPreview: comment.length > 0 ? comment : "Sets: " + sets.length
     showRemove: true
     theme: Theme
+    initiallyExpanded: startExpanded
 
     onRemove: SessionEditor.removeExercise(exerciseId)
 
@@ -37,6 +40,7 @@ CollapsibleCard {
                 value: effortRir === null ? 2 : effortRir
                 editable: true
                 Layout.preferredWidth: 120
+                onActiveFocusChanged: if (activeFocus) contentItem.selectAll()
             }
             Label { text: "0 = all out, 5 = very easy"; color: (theme && theme.current) ? theme.current.textTertiary : "#94a3b8"; font.pixelSize: 11; Layout.fillWidth: true }
         }
@@ -94,9 +98,26 @@ CollapsibleCard {
                 text: "Add Set"
                 Layout.alignment: Qt.AlignLeft
                 onClicked: {
+                    if (captureScroll) captureScroll()
                     SessionEditor.addSet(exerciseId, inputRow.reps, inputRow.weight)
                 }
             }
         }
+    }
+
+    function updateWeightDefault() {
+        if (sets && sets.length > 0) {
+            const last = sets[sets.length - 1]
+            if (last.weight !== undefined)
+                inputRow.weight = last.weight
+        } else {
+            inputRow.weight = 100
+        }
+    }
+
+    onSetsChanged: updateWeightDefault()
+    Component.onCompleted: {
+        card.expanded = startExpanded
+        updateWeightDefault()
     }
 }

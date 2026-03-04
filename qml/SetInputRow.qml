@@ -35,6 +35,7 @@ RowLayout {
         up.indicator.implicitHeight: 15
         down.indicator.implicitWidth: 15
         down.indicator.implicitHeight: 15
+        onActiveFocusChanged: if (activeFocus) contentItem.selectAll()
     }
 
     Label {
@@ -55,6 +56,7 @@ RowLayout {
         up.indicator.implicitHeight: 15
         down.indicator.implicitWidth: 20
         down.indicator.implicitHeight: 15
+        onActiveFocusChanged: if (activeFocus) contentItem.selectAll()
     }
 
     Label {

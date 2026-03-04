@@ -6,6 +6,12 @@ import GymApp
 ColumnLayout {
     id: root
     property int selectedSessionId: -1
+    property int lastAddedExerciseId: -1
+    property real savedScrollY: 0
+
+    function captureScroll() {
+        savedScrollY = exerciseList.contentY
+    }
 
     onSelectedSessionIdChanged: {
         console.log("[SessionEditorPane] selectedSessionId changed from", SessionEditor.sessionId, "to", selectedSessionId)
@@ -81,50 +87,36 @@ ColumnLayout {
             anchors.margins: 6
             spacing: 6
 
-            ColumnLayout {
-                id: addExerciseFlow
-                Layout.fillWidth: true
-                spacing: 6
+        RowLayout {
+            id: addExerciseFlow
+            Layout.fillWidth: true
 
-                ComboBox {
-                    id: machineCombo
-                    model: MachineList
-                    textRole: "name"
-                    valueRole: "id"
-                    Layout.preferredWidth: 180
-                }
-                // TextField {
-                //     id: customName
-                //     placeholderText: "Or custom name"
-                //     Layout.fillWidth: true
-                // }
-                // LabeledSpinBox {
-                //     id: addRirControl
-                //     label: "RIR"
-                //     from: 0
-                //     to: 5
-                //     value: 2
-                //     Layout.fillWidth: true
-                // }
-                // TextField {
-                //     id: exerciseComment
-                //     placeholderText: "Comment (optional)"
-                //     Layout.fillWidth: true
-                // }
-                Button {
-                    text: "Add"
-                    onClicked: {
-                        const machineId = machineCombo.currentValue || 0
-                        SessionEditor.addExercise(machineId, "", "", "", 2)
-                        SessionList.refresh()
-                        SessionDetail.loadSession(SessionEditor.sessionId)
-                        exerciseComment.text = ""
-                        customName.text = ""
-                        addRirControl.value = 2
+            ComboBox {
+                id: machineCombo
+                model: MachineList
+                textRole: "name"
+                valueRole: "id"
+                Layout.fillWidth: true
+            }
+
+            Button {
+                text: "Add"
+                onClicked: {
+                    root.captureScroll()
+                    const machineId = machineCombo.currentValue || 0
+                    const newId = SessionEditor.addExercise(machineId, "", "", 0)
+                    if (newId > 0) {
+                        lastAddedExerciseId = newId
                     }
+                    SessionList.refresh()
+                    SessionDetail.loadSession(SessionEditor.sessionId)
+                    exerciseComment.text = ""
+                    customName.text = ""
+                    addRirControl.value = 2
                 }
             }
         }
+    }
     }
 
     ListView {
@@ -144,6 +136,8 @@ ColumnLayout {
             effortRir: model.effortRir
             sets: model.sets
             listIndex: index
+            startExpanded: exerciseId === root.lastAddedExerciseId
+            captureScroll: root.captureScroll
         }
         Component.onCompleted: {
             console.log("[SessionEditorPane] ListView completed; count =", SessionEditor.count)
@@ -220,6 +214,9 @@ ColumnLayout {
                 SessionList.refresh()
                 SessionDetail.loadSession(SessionEditor.sessionId)
             }
+            Qt.callLater(function() {
+                exerciseList.contentY = root.savedScrollY
+            })
         }
     }
 }
