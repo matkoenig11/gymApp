@@ -17,6 +17,7 @@ CollapsibleCard {
     
     title: machineName.length > 0 ? machineName : "Exercise"
     subtitle: muscleGroup
+    subtitleColor: MuscleColors.colorFor(muscleGroup)
     collapsedPreview: comment.length > 0 ? comment : "Sets: " + sets.length
     showRemove: true
     theme: Theme

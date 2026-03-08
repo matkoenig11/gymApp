@@ -19,7 +19,7 @@ ToolBar {
     Material.primary: "#000000ff"
     Material.background: "transparent"
     Material.foreground: "#ffffff"
-    background: Rectangle { color: theme.current.primary; opacity: 1 }
+    background: Rectangle { color: theme ? theme.current.primary : "#00a169"; opacity: 1 }
 
     RowLayout {
         anchors.fill: parent

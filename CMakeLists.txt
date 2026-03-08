@@ -8,6 +8,8 @@ set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Quick QuickControls2 Qml Sql Test)
 
+set(QT_QML_SOURCE_TREE "${CMAKE_CURRENT_SOURCE_DIR}/qml")
+
 # Backend (shared between desktop and mobile)
 add_library(GymBackend STATIC
     core/Backend.cpp
@@ -37,13 +39,15 @@ qt_add_executable(GymApp
 
 set_property(TARGET GymApp PROPERTY OUTPUT_NAME "gymapp_bin")
 
+qt_policy(SET QTP0001 NEW)
 qt_policy(SET QTP0004 NEW)
+
+# Ensure QML singleton metadata is generated for MuscleColors
+set_source_files_properties(qml/MuscleColors.qml PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
 
 qt_add_qml_module(GymApp
     URI GymApp
     VERSION 1.0
-    OUTPUT_DIRECTORY "qt/qml/GymApp"
-    RESOURCE_PREFIX "/qt/qml"
     QML_FILES
         qml/Main.qml
         qml/HeaderBar.qml
@@ -62,6 +66,7 @@ qt_add_qml_module(GymApp
         qml/ActionButtonGroup.qml
         qml/SetInputRow.qml
         qml/CollapsibleCard.qml
+        qml/MuscleColors.qml
     SOURCES
         core/Backend.h
         core/MachineRepository.h

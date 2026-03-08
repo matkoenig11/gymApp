@@ -117,11 +117,21 @@ Item {
                                     font.pixelSize: 14
                                     color: "#0f172a"
                                 }
-                                Label {
+                                RowLayout {
                                     visible: muscleGroup.length > 0
-                                    text: muscleGroup
-                                    font.pixelSize: 12
-                                    color: "#334155"
+                                    spacing: 6
+                                    Rectangle {
+                                        width: 10
+                                        height: 10
+                                        radius: 5
+                                        color: MuscleColors.colorFor(muscleGroup)
+                                        border.color: "#e2e8f0"
+                                    }
+                                    Label {
+                                        text: muscleGroup
+                                        font.pixelSize: 12
+                                        color: MuscleColors.colorFor(muscleGroup)
+                                    }
                                 }
                                 Label {
                                     visible: note.length > 0

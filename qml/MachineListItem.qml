@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-
+import GymApp
 
 Item {
     id: root
@@ -15,11 +15,13 @@ Item {
     property int weightMin
     property int weightMax
     property string note
+
     Rectangle {
         anchors.fill: parent
         color: "#f1f5f9"
         border.color: "#e2e8f0"
         border.width: 1
+
         MouseArea {
             anchors.fill: parent
             onClicked: root.clicked(root.machineId)
@@ -38,11 +40,33 @@ Item {
                 font.pixelSize: 14
                 color: "#0f172a"
             }
-            Label {
-                text: root.muscleGroup + " • " + root.weightMin + " - " + root.weightMax + " lbs"
-                color: "#334155"
-                font.pixelSize: 12
+
+            RowLayout {
+                spacing: 6
+                Rectangle {
+                    width: 10
+                    height: 10
+                    radius: 5
+                    color: MuscleColors.colorFor(root.muscleGroup)
+                    border.color: "#e2e8f0"
+                }
+                Label {
+                    text: root.muscleGroup
+                    color: MuscleColors.colorFor(root.muscleGroup)
+                    font.pixelSize: 12
+                }
+                Label {
+                    text: "\u2022"
+                    color: "#94a3b8"
+                    font.pixelSize: 12
+                }
+                Label {
+                    text: root.weightMin + " - " + root.weightMax + " lbs"
+                    color: "#334155"
+                    font.pixelSize: 12
+                }
             }
+
             Label {
                 text: root.note
                 font.pixelSize: 12

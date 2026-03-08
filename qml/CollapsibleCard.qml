@@ -24,6 +24,7 @@ Rectangle {
     default property alias content: expandedLayout.data
     property string title: "Card"
     property string subtitle: ""
+    property string subtitleColor: ""
     property string collapsedPreview: ""
     property bool showRemove: false
     property var theme: Theme
@@ -97,7 +98,9 @@ Rectangle {
             Label {
                 visible: subtitle.length > 0
                 text: subtitle
-                color: (theme && theme.current) ? theme.current.textSecondary : "#475569"
+                color: subtitleColor.length > 0
+                       ? subtitleColor
+                       : (theme && theme.current) ? theme.current.textSecondary : "#475569"
                 font.pixelSize: 12
             }
 

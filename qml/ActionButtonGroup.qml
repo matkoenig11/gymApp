@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import GymApp
 
 /**
  * Reusable action button group - for primary and danger actions
